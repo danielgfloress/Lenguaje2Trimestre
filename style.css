@@ -1,3 +1,9 @@
+:root{
+    --color-header: linear-gradient (rgba(30, 58, 138, 0.9), rgba(30, 64, 175, 0.8), rgba(30, 58, 138, 0.9));
+    --color-fondo: linear-gradient(135deg, #3b82f6, #facc15, #ffffff)
+    --color-label: 
+}
+
 body {
     background: linear-gradient(135deg, #3b82f6, #facc15, #ffffff);
     min-height: 100%;
@@ -7,16 +13,10 @@ body {
     font-family: system-ui, sans-serif;
 }
 
-.mountains-of-christmas-bold {
-  font-family: "Mountains of Christmas", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
 .header {
     position: relative;
-    height: 220px;
-    background: url("img/estadio.jpeg") center / cover no-repeat;
+    height: 180px;
+    background: url("img/estadio.jpg") center / cover no-repeat;
 }
 
 .header__overlay {
@@ -28,31 +28,24 @@ body {
 .header__content {
     position: relative;
     max-width: 1200px;
-    margin: auto;
     height: 100%;
     padding: 32px;
     color: white;
     display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
 .header__title {
     display: flex;
     align-items: center;
-    gap: 16px;
     font-size: 20px;
 }
 
 .header__logo {
     width: 10%;
 }
-.header__text {
-    font-size: 14px;
-    opacity: 0.9;
-}
 
-/*PRIMERA SECCIÓN*/
+/* ETIQUETA EQUIPOS */
 
 .container {
     max-width: 1200px;
@@ -60,31 +53,22 @@ body {
     padding: 40px 16px;
 }
 
-/* BOTONES DE ELECCIÓN */
-
-.tabs input {
-    display: none;
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
 }
 
-.tabs__labels {
-display: grid;
-grid-template-columns: 1fr 1fr;
-max-width: 400px;
-margin: 0 auto 30px;
+.label__img{
+    width: 5%;
 }
 
-.estrella{
-    width: 10%;
-}
-.trofeo{
-    width: 10%;
-}
-
-.tabs__labels label {
+.label__title {
+    width: 30%;
     text-align: center;
     padding: 10px;
-    background: white;
-    cursor: pointer;
+    background: linear-gradient(135deg, #facc15, #ffffff, #3b82f6);
     font-weight: bold;
     border-radius: 999px;
     margin: 0 10px;
@@ -99,25 +83,14 @@ margin: 0 auto 30px;
     gap: 25px;
 }
 
-.rank{
-    position: absolute;
-    top: 14px;
-    right: 14px;
-    background: white;
-    padding: 4px 10px;
-    border-radius: 999px;
-    font-weight: 700;
-    z-index: 1;
-}
-
 .box__img{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .box {
     background: white;
-    border-radius: 16px;
+    border-radius: 10px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
