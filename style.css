@@ -3,5 +3,98 @@
     --primary-color-transparent: rgba(12, 125, 255, 0.473);
     --secondary-color: rgb(255, 242, 53);
     --secondary-color-transparent: rgba(255, 242, 53, 0.473);
-    --primary-font: "Comic Sans MS";
+    --primary-font: "Arial";
+}
+
+body {
+    background: linear-gradient(135deg, #3b82f6, #facc15, #ffffff);
+    box-sizing: border-box;
+    margin: 0;
+    font-family: var(--primary-font);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    background-color: var(--primary-color);
+}
+
+.header__content {
+    margin-left: 200px;
+    padding: 12px;
+    color: white;
+    display: flex;
+}
+
+.header__title {
+    gap: 16px;
+    font-size: 40px;
+}
+
+.header__logo {
+    width: 100px;
+}
+
+.header__nav {
+    margin-right: 200px;
+    padding: 12px;
+    color: white;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.header__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+}
+
+.header__link:hover {
+    color: rgb(196, 196, 196);
+}
+
+.header__link-seleccionado {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(196, 196, 196);
+    font-size: 18px;
+}
+
+.index {
+    background-image: url(images/estadio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 400px;
+}
+
+.index__overlay {
+    background-color: var(--primary-color-transparent);
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.index__content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+    margin-left: 200px;
+}
+
+.index__title {
+    font-size: 60px;
+    width: 500px;
+}
+
+.index__text {
+    margin-top: -25px;
+    font-size: 28px;
+    width: 900px;
 }
