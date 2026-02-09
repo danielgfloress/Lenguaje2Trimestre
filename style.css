@@ -3,5 +3,116 @@
     --primary-color-transparent: rgba(12, 125, 255, 0.473);
     --secondary-color: rgb(255, 242, 53);
     --secondary-color-transparent: rgba(255, 242, 53, 0.473);
-    --primary-font: "Comic Sans MS";
+    --white-color: white;
+    --black-color: black;
+    --primary-font: 'Montserrat', sans-serif;
+    --title-font: 'Bangers', cursive;
+}
+
+body {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--white-color));
+    box-sizing: border-box;
+    margin: 0;
+    font-family: var(--primary-font);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    background-color: var(--primary-color);
+}
+
+.header__content {
+    margin-left: 200px;
+    padding: 12px;
+    color: white;
+    display: flex;
+}
+
+.header__title {
+    font-family: var(--title-font);
+    font-weight: lighter;
+    gap: 16px;
+    font-size: 40px;
+}
+
+.header__logo {
+    width: 100px;
+}
+
+.index {
+    background-image: url(images/estadio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 500px;
+}
+
+.index__overlay {
+    background-color: var(--primary-color-transparent);
+    height: 500px;
+    align-items: center;
+}
+
+.index__content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: var(--white-color);
+    margin-left: 200px;
+}
+
+.index__title {
+    font-family: var(--title-font);
+    font-weight: lighter;
+    font-size: 80px;
+    width: 700px;
+}
+
+.index__text {
+    margin-top: -25px;
+    font-size: 28px;
+    width: 900px;
+}
+
+.index__nav {
+    height: 100px;
+    padding: 12px;
+    color: var(--white-color);
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.index__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--white-color);
+    border-radius: 999px;
+    width: 125px;
+    height: 45px;
+    color: var(--white-color);
+    font-size: 18px;
+}
+
+.index__link:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+.index__link-seleccionado {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    width: 125px;
+    height: 45px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-size: 18px;
 }
