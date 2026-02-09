@@ -229,6 +229,43 @@ body {
     cursor: pointer;
 }
 
+.explora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.explora__tarjetas {
+    display: flex;
+    gap: 20px;
+    width: 1500px;
+}
+
+.explora__tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-color-transparent));
+    border: 2px solid var(--white-color);
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+    color: var(--white-color);
+    transition: transform 0.5s ease
+}
+
+.explora__tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
+.explora__texto {
+    width: 250px;
+}
 
 .plantilla__container {
     display: flex;
