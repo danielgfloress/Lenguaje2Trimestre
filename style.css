@@ -116,14 +116,16 @@ body {
     color: var(--black-color);
     font-size: 18px;
 }
-.plantilla__container{
+
+.plantilla__container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
     padding: 50px;
 }
-.plantilla__tarjeta{
+
+.plantilla__tarjeta {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,7 +137,8 @@ body {
     border-radius: 30px;
     transition: transform 0.5s ease
 }
-.plantilla__tarjeta--star{
+
+.plantilla__tarjeta--star {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,30 +150,88 @@ body {
     border-radius: 30px;
     transition: transform 0.5s ease;
 }
-.plantilla__img{
+
+.plantilla__img {
     height: 250px;
     width: 400px;
     border-radius: 20px;
 }
-.plantilla__title{
+
+.plantilla__title {
     color: var(--secondary-color);
 }
-.plantilla__title--star{
+
+.plantilla__title--star {
     color: var(--primary-color);
 }
-.plantilla__text{
+
+.plantilla__text {
     font-size: 20px;
     color: var(--primary-color);
 }
-.plantilla__text--star{
+
+.plantilla__text--star {
     font-size: 20px;
     color: var(--black-color);
 }
-.plantilla__tarjeta:hover{
+
+.plantilla__tarjeta:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
-.plantilla__tarjeta--star:hover{
+
+.plantilla__tarjeta--star:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(146, 116, 18, 0.769);
+}
+
+.plantilla__valoracion {
+    width: 320px;
+    font-family: Arial, sans-serif;
+    color: var(--primary-color);
+}
+
+.plantilla__textoBarra {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.plantilla__barra {
+    height: 12px;
+    background: rgb(30, 58, 95);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.plantilla__rellenar--95 {
+    height: 100%;
+    width: 95%;
+    background: linear-gradient(90deg, rgb(77, 163, 255), rgb(46, 204, 113));
+    border-radius: 10px;
+}
+.plantilla__rellenar--82 {
+    height: 100%;
+    width: 82%;
+    background: linear-gradient(90deg, rgb(77, 163, 255), rgb(46, 204, 113));
+    border-radius: 10px;
+}
+.plantilla__rellenar--86 {
+    height: 100%;
+    width: 86%;
+    background: linear-gradient(90deg, rgb(77, 163, 255), rgb(46, 204, 113));
+    border-radius: 10px;
+}
+.plantilla__rellenar--93 {
+    height: 100%;
+    width: 93%;
+    background: linear-gradient(90deg, rgb(77, 163, 255), rgb(46, 204, 113));
+    border-radius: 10px;
+}
+.plantilla__rellenar--90 {
+    height: 100%;
+    width: 90%;
+    background: linear-gradient(90deg, rgb(77, 163, 255), rgb(46, 204, 113));
+    border-radius: 10px;
 }
