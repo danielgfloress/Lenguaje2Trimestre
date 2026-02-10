@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Montserrat:wght@300;400;600;700&family=Bangers&display=swap');
 
 :root {
+    --background-color: rgb(59, 130, 246), rgb(250, 204, 21), rgb(255, 255, 255);
     --primary-color: rgb(12, 125, 255);
     --primary-color-transparent: rgba(12, 125, 255, 0.473);
     --secondary-color: rgb(255, 242, 53);
@@ -11,6 +12,10 @@
     --primary-font: 'Montserrat', sans-serif;
     --title-font: 'Bangers', cursive;
     --pixel-font: 'Press Start 2P', cursive;
+    --win-color: lightgreen;
+    --draw-color: rgb(249, 249, 213);
+    --lose-color: lightcoral;
+    --footer-color:rgb(3, 52, 109);
 }
 
 body {
@@ -512,4 +517,184 @@ body {
 
 .value {
     font-size: 15px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 16px;
+}
+
+/* EQUIPOS */
+
+.gridTeams {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 4fr));
+    gap: 25px;
+}
+
+.box__img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.box {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.box__title {
+    margin-bottom: 10px;
+}
+
+.box__bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box span {
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+}
+
+.box strong {
+    color: rgb(37, 99, 235);
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.stats__win {
+    text-align: center;
+    background-color:lightgreen;
+    border-radius: 10px;
+}
+
+.stats__text {
+    font-size: 14px;
+}
+
+.stats__draw {
+    text-align: center;
+    background-color: rgb(249, 249, 213);
+    border-radius: 10px;
+}
+
+.stats__lose {
+    text-align: center;
+    background-color: lightcoral;
+    border-radius: 10px;
+}
+
+/*FOOTER*/
+
+.footer {
+    background: rgb(3, 52, 109);
+    padding: 32px 5%;
+}
+
+.footer__newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(183, 182, 182);
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+}
+
+.footer__newsletter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__newsletter a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.newsletter__text {
+    font-weight: 500;
+    color: white;
+}
+
+.newsletter__link {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+    margin-bottom: 25px;
+}
+
+.column__title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.column a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.column a:hover {
+    color: #0071c5;
+}
+
+.footer__bottom {
+    border-top: 1px solid rgb(183, 182, 182);
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.footer__links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.footer__links a {
+    text-decoration: underline;
+    color: white;
+    font-size: 15px;
+}
+
+.footer__links a:hover {
+    color: #0071c5;
 }
