@@ -5,7 +5,7 @@
     --primary-color-transparent: rgba(12, 125, 255, 0.473);
     --secondary-color: rgb(255, 242, 53);
     --secondary-color-transparent: rgba(255, 242, 53, 0.473);
-    --dark-blue:rgb(15, 52, 96);
+    --dark-blue: rgb(15, 52, 96);
     --white-color: white;
     --black-color: black;
     --primary-font: 'Montserrat', sans-serif;
@@ -365,38 +365,44 @@ body {
     background: linear-gradient(90deg, rgb(77, 163, 255), rgb(46, 204, 113));
     border-radius: 10px;
 }
+
 .plantilla__rellenar--82 {
     height: 100%;
     width: 82%;
     background: linear-gradient(90deg, rgb(77, 163, 255), rgb(46, 204, 113));
     border-radius: 10px;
 }
+
 .plantilla__rellenar--86 {
     height: 100%;
     width: 86%;
     background: linear-gradient(90deg, rgb(77, 163, 255), rgb(46, 204, 113));
     border-radius: 10px;
 }
+
 .plantilla__rellenar--93 {
     height: 100%;
     width: 93%;
     background: linear-gradient(90deg, rgb(77, 163, 255), rgb(46, 204, 113));
     border-radius: 10px;
 }
+
 .plantilla__rellenar--90 {
     height: 100%;
     width: 90%;
     background: linear-gradient(90deg, rgb(77, 163, 255), rgb(46, 204, 113));
     border-radius: 10px;
 }
-.partido__button{
+
+.partido__button {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
-.button__text{
+
+.button__text {
     font-size: 20px;
     color: var(--dark-blue);
     background-color: var(--white-color);
