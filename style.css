@@ -8,6 +8,10 @@
     --dark-blue: rgb(15, 52, 96);
     --white-color: white;
     --black-color: black;
+    --red-color: red;
+    --orange-color: orange;
+    --violet-color: violet;
+    --green-color: #03583f;
     --primary-font: 'Montserrat', sans-serif;
     --title-font: 'Bangers', cursive;
     --pixel-font: 'Press Start 2P', cursive;
@@ -512,4 +516,369 @@ body {
 
 .value {
     font-size: 15px;
+}
+
+.proximos__logotipo{
+    display: flex;
+    gap: 25px;
+}
+
+.proximos__equipo__inazuma{
+    display: flex;
+    justify-self: center;
+    width: 600px;
+}
+
+.proximos__imagen__gif{
+    position: absolute;
+    margin-top: 100px;
+}
+
+
+.proximos__imagen__gif2{
+    position: absolute;
+}
+
+.proximos__title__proximos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+    
+}
+
+.proximos__section{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+
+.proximos__title__section{
+    display: flex;
+    justify-content: center;
+}
+
+.proximos__box__partidos{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 25px;
+    margin-bottom: 100px;
+}
+
+.proximos__primer{
+    display: flex;
+    background-color: var(--white-color);
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 90%;
+    border: solid;
+    border-radius: 15px;
+}
+
+
+.proximos__box__raimon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__raimon{
+    display: flex;
+    width: 55px;
+    height: 55px;
+}
+
+.proximos__vs{
+    display: flex;
+    font: 1.5em sans-serif;
+    color: var(--red-color);
+    align-items: center;
+}
+
+.proximos__box__royal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__royal{
+    display: flex;
+    width: 55px;
+    height: 55px;
+}
+
+
+.proximos__segundo{
+    display: flex;
+    background-color: var(--white-color);
+    align-items: center;
+    gap: 25px;
+    flex-direction: column;
+    height: 90%;
+    width: 600px;
+    border: solid;
+    border-radius: 15px;
+}
+
+.proximos__box__occult{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__occult{
+    display: flex;
+    width: 55px;
+    height: 55px;
+}
+
+.proximos__box__zeus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__zeus{
+    display: flex;
+    width: 55px;
+    height: 55px;
+}
+
+.proximos__lateral{
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.proximos__navs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font: 1.5em sans-serif;
+    margin-left: 10px;
+}
+
+.proximos__nav1{
+    display: flex;
+    text-decoration: none;
+}
+
+.proximos__nav2{
+    display: flex;
+    text-decoration: none;
+}
+
+.proximos__nav3{
+    display: flex;
+    text-decoration: none;
+}
+
+.proximos__nav4{
+    display: flex;
+    text-decoration: none;
+}
+
+.proximos__section1{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.proximos__section__lugares{
+    display: grid;
+    grid-column: 2;
+    grid-row: 3;
+    justify-content: center;
+}
+
+
+.proximos__title__lugar{
+    display: flex;
+    justify-content: center;
+}
+
+.proximos__section__horas{
+    display: flex;
+    justify-content: center;
+}
+
+.proximos__horario{
+    display: flex;
+    justify-content: center;
+}
+
+.proximos__title__horario{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.proximos__tercero{
+    display: flex;
+    background-color: var(--white-color);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 600px;
+    border: solid;
+    border-radius: 15px;
+}
+
+.proximos__box__equipo{
+    display: flex;
+    gap: 20px;
+}
+
+.proximos__box__shuriken{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__shuriken{
+    display: flex;
+    width: 55px;
+    height: 55px;
+}
+
+.proximos__box__farm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__farm{
+    display: flex;
+    width: 55px;
+    height: 55px;
+}
+
+
+.proximos__cuarto{
+    display: flex;
+    background-color: var(--white-color);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 600px;
+    border: solid;
+    border-radius: 15px;
+}
+
+.proximos__box__wild{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__wild{
+    display: flex;
+    width: 55px;
+    height: 55px;
+}
+
+.proximos__box__aggron{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__aggron{
+    display: flex;
+    width: 80px;
+    height: 80px;
+}
+
+
+.proximos__lugares{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.proximos__estadios{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.proximos__estadio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.proximos__raimon__vs__royal{
+    display: flex;
+    justify-content: center;
+    color: var(--orange-color);
+}
+
+.proximos__otro__color{
+    color: var(--green-color);
+}
+
+.proximos__estadio__img{
+    display: flex;
+    width: 250px;
+    height: 250px;
+}
+
+.proximos__occult__vs__zeus{
+    display: flex;
+    justify-content: center;
+    color: var(--black-color);
+}
+
+.proximos__otro__color_z{
+    color: var(--primary-color);
+}
+
+.proximos__shuriken__vs__farm{
+    display: flex;
+    justify-content: center;
+    color: var(--violet-color);
+}
+
+.proximos__otro__color_f{
+    color: var(--orange-color);
+}
+
+.proximos__wild__vs__aggron{
+    display: flex;
+    justify-content: center;
+    color: var(--green-color);
+}
+
+.proximos__otro__color_a{
+    color: var(--white-color);
+}
+
+.proximos__horarios{
+     display: flex;
+    flex-direction: column;
+    justify-self: center;
+    height: 90%;
+    width: 400px;
+}
+
+.proximos__horas{
+    display: flex;
+    background-color: var(--white-color);
+    font: 1em sans-serif;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.proximos__grande{
+    display: flex;
+    font: 2em sans-serif;
 }
