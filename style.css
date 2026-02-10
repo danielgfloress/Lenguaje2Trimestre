@@ -245,6 +245,8 @@ body {
 
 .explora__tarjetas {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     width: 1500px;
 }
@@ -257,7 +259,7 @@ body {
     background: linear-gradient(135deg, var(--primary-color), var(--primary-color-transparent));
     border: 2px solid var(--white-color);
     border-radius: 20px;
-    width: 300px;
+    width: 270px;
     height: 200px;
     color: var(--white-color);
     transition: transform 0.5s ease
@@ -269,6 +271,7 @@ body {
 }
 
 .explora__texto {
+    margin-top: 30px;
     width: 250px;
 }
 
@@ -308,7 +311,7 @@ body {
 
 .plantilla__img {
     height: 180px;
-    width: 350px;
+    width: 325px;
     border-radius: 20px;
 }
 
