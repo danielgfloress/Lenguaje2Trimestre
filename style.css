@@ -414,40 +414,42 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .card {
     display: flex;
     justify-content: center;
-    width: 98.5%;
+    width: 400px;
     height: 200px;
-    background: linear-gradient(#2a5fa5, #1d4b87);
-    border: 4px solid #0c2f5a;
+    background: linear-gradient( rgb(42, 95, 165), rgb(29, 75, 135));
+    border: 4px solid rgb(12, 47, 90);
     border-radius: 8px;
-    display: flex;
     padding: 8px;
-    box-shadow: 0 4px 0 #08213f;
+    box-shadow: 0 4px 0 rgb(8, 33, 63);
     font-family: var(--pixel-font);
 }
+
 .card__img{
     height: 100%;
     width: 100%;
 }
+
 .avatar {
     width: 200px;
     height: 200px;
-    background: #f2c27b;
-    border: 3px solid #0c2f5a;
+    background: rgb(242, 194, 123);
+    border: 3px solid rgb(12, 47, 90);
     border-radius: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    color: #333;
+    color: rgb(51, 51, 51);
 }
 
 .info {
     flex: 1;
     margin: 20px 0 0 10px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .top {
@@ -462,7 +464,7 @@ body {
 }
 
 .gender {
-    color: #7fd0ff;
+    color: rgb(127, 208, 255);
     margin-left: 4px;
 }
 
@@ -490,7 +492,7 @@ body {
 .bar {
     flex: 1;
     height: 10px;
-    background: #0b2e55;
+    background: rgb(11, 46, 85);
     border-radius: 4px;
     margin: 0 6px;
     overflow: hidden;
@@ -499,13 +501,13 @@ body {
 .fill.hp {
     width: 68%;
     height: 100%;
-    background: #f0d030;
+    background: rgb(240, 208, 48);
 }
 
 .fill.mp {
     width: 46%;
     height: 100%;
-    background: #7fc8ff;
+    background: rgb(127, 200, 255);
 }
 
 .value {
