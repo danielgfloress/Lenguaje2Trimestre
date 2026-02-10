@@ -98,11 +98,14 @@ body {
     height: 45px;
     color: var(--white-color);
     font-size: 18px;
+    transition: transform 0.5s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .index__link:hover {
     background-color: var(--white-color);
     color: var(--black-color);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
 
 .index__link-seleccionado {
@@ -116,6 +119,153 @@ body {
     background-color: var(--white-color);
     color: var(--black-color);
     font-size: 18px;
+    transition: transform 0.5s ease;
+}
+
+.index__link-seleccionado:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
+.destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.titulo {
+    font-family: var(--title-font);
+    font-size: 60px;
+    font-weight: lighter;
+    color: var(--primary-color);
+    text-decoration: underline;
+
+}
+
+.boton {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 999px;
+    padding: 20px;
+    color: var(--primary-color);
+    font-size: 20px;
+    transition: transform 0.5s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.boton:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.newsletter__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color-transparent);
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    width: 1000px;
+    height: 400px;
+}
+
+.newsletter__text {
+    font-size: 20px;
+    width: 700px;
+
+}
+
+.newsletter__email {
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.newsletter__input {
+    width: 500px;
+    height: 20px;
+    border: 2px solid var(--white-color);
+    border-radius: 999px;
+    padding: 15px;
+}
+
+.newsletter__input:hover {
+    border: 2px solid var(--primary-color);
+}
+
+.newsletter__input:focus {
+    border: 2px solid var(--primary-color);
+    outline: none;
+}
+
+.newsletter__button {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    padding: 0 15px 0 15px;
+    border-radius: 999px;
+    color: var(--white-color);
+    font-size: 15px;
+    transition: transform 0.5s ease
+}
+
+.newsletter__button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+    cursor: pointer;
+}
+
+.explora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.explora__tarjetas {
+    display: flex;
+    gap: 20px;
+    width: 1500px;
+}
+
+.explora__tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-color-transparent));
+    border: 2px solid var(--white-color);
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+    color: var(--white-color);
+    transition: transform 0.5s ease
+}
+
+.explora__tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
+.explora__texto {
+    width: 250px;
 }
 
 .plantilla__container {
@@ -255,24 +405,4 @@ body {
     background-color: var(--white-color);
     padding: 15px;
     border-radius: 20px;
-}
-
-.plantilla__button {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--black-color);
-    border-radius: 999px;
-    width: 125px;
-    height: 45px;
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    font-size: 18px;
-    transition: transform 0.5s ease;
-}
-
-.plantilla__button:hover {
-    transform: translateY(-5px);
-    background-color: var(--dark-blue);
 }
