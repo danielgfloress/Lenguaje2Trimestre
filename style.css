@@ -1049,7 +1049,7 @@ body {
 }
 
 .proximos__horarios{
-     display: flex;
+    display: flex;
     flex-direction: column;
     justify-self: center;
     height: 90%;
