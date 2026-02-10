@@ -400,21 +400,3 @@ body {
     padding: 15px;
     border-radius: 20px;
 }
-.plantilla__button{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--black-color);
-    border-radius: 999px;
-    width: 125px;
-    height: 45px;
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    font-size: 18px;
-    transition: transform 0.5s ease;
-}
-.plantilla__button:hover{
-    transform: translateY(-5px);
-    background-color: var(--dark-blue);
-}
