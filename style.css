@@ -827,12 +827,19 @@ body {
 
 .proximos__imagen__gif{
     position: absolute;
-    margin-top: 100px;
+    justify-self: left;
 }
 
 
 .proximos__imagen__gif2{
     position: absolute;
+    justify-self: right;
+}
+
+.proximos__pinguino{
+    display: flex;
+    width: 400px;
+    height: 250px;
 }
 
 .proximos__title__proximos{
