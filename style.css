@@ -524,7 +524,6 @@ body {
     font-size: 15px;
 }
 
-<<<<<<< HEAD
 /* ETIQUETA EQUIPOS */
 
 .container {
@@ -705,7 +704,8 @@ body {
 
 .footer__links a:hover {
     color: #0071c5;
-=======
+}
+
 .proximos__logotipo{
     display: flex;
     gap: 25px;
@@ -1069,5 +1069,4 @@ body {
 .proximos__grande{
     display: flex;
     font: 2em sans-serif;
->>>>>>> f3ecb77df257de55c9053aaed3a20a928189cd3c
 }
