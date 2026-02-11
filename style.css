@@ -600,6 +600,115 @@ body {
     border-radius: 10px;
 }
 
+/*CARRUSEL*/
+
+.label_equipacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+
+.equipacion__title {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(135deg, rgb(250, 204, 21), rgb(255, 255, 255), rgb(59, 130, 246));
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.equipacion__price {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color:rgb(50, 115, 207);
+    width: 70%;
+    height: 40px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+}
+
+.tienda__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.tienda {
+    width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.tienda__track {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+.tienda__carrusel {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carrusel__text{
+    background-color: #0071c5;
+    background-size: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.carrusel__img {
+    width: 70%;
+    display: block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.button__styleIzq,
+.button__styleDer {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button__img {
+    width: 40px;
+    transition: transform 0.2s;
+}
+
+.button__img:hover {
+    transform: scale(1.15);
+}
+
+.carrusel__points {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 8px;
+}
+
+.carrusel__point {
+    width: 12px;
+    height: 12px;
+    background: #0071c5;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carrusel__point.active {
+    background: #333;
+}
+
 /*FOOTER*/
 
 .footer {
