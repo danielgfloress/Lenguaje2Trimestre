@@ -9,6 +9,10 @@
     --dark-blue: rgb(15, 52, 96);
     --white-color: white;
     --black-color: black;
+    --red-color: red;
+    --orange-color: orange;
+    --violet-color: violet;
+    --green-color: #03583f;
     --primary-font: 'Montserrat', sans-serif;
     --title-font: 'Bangers', cursive;
     --pixel-font: 'Press Start 2P', cursive;
@@ -81,7 +85,7 @@ body {
 
 .index__text {
     margin-top: -25px;
-    font-size: 28px;
+    font-size: 22px;
     width: 900px;
 }
 
@@ -102,8 +106,8 @@ body {
     justify-content: center;
     border: 1px solid var(--white-color);
     border-radius: 999px;
-    width: 125px;
-    height: 45px;
+    width: 115px;
+    height: 40px;
     color: var(--white-color);
     font-size: 18px;
     transition: transform 0.5s ease, background-color 0.2s ease, color 0.2s ease;
@@ -121,9 +125,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid var(--white-color);
     border-radius: 999px;
-    width: 125px;
-    height: 45px;
+    width: 115px;
+    height: 40px;
     background-color: var(--white-color);
     color: var(--black-color);
     font-size: 18px;
@@ -158,7 +163,7 @@ body {
     justify-content: center;
     border: 1px solid var(--primary-color);
     border-radius: 999px;
-    padding: 20px;
+    padding: 15px;
     color: var(--primary-color);
     font-size: 20px;
     transition: transform 0.5s ease, background-color 0.2s ease, color 0.2s ease;
@@ -249,6 +254,8 @@ body {
 
 .explora__tarjetas {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     width: 1500px;
 }
@@ -261,7 +268,7 @@ body {
     background: linear-gradient(135deg, var(--primary-color), var(--primary-color-transparent));
     border: 2px solid var(--white-color);
     border-radius: 20px;
-    width: 300px;
+    width: 270px;
     height: 200px;
     color: var(--white-color);
     transition: transform 0.5s ease
@@ -273,6 +280,7 @@ body {
 }
 
 .explora__texto {
+    margin-top: 30px;
     width: 250px;
 }
 
@@ -291,8 +299,8 @@ body {
     flex-direction: column;
     text-align: center;
     background: linear-gradient(135deg, var(--primary-color), var(--white-color));
-    gap: 20px;
-    padding: 40px;
+    gap: 10px;
+    padding: 30px;
     border-radius: 30px;
     transition: transform 0.5s ease
 }
@@ -305,14 +313,14 @@ body {
     text-align: center;
     background: linear-gradient(135deg, var(--secondary-color), var(--white-color));
     gap: 20px;
-    padding: 40px;
+    padding: 30px;
     border-radius: 30px;
     transition: transform 0.5s ease;
 }
 
 .plantilla__img {
-    height: 250px;
-    width: 400px;
+    height: 180px;
+    width: 325px;
     border-radius: 20px;
 }
 
@@ -423,7 +431,8 @@ body {
 .card {
     display: flex;
     justify-content: center;
-    width: 400px;
+    margin-top: 50px;
+    width: 50%;
     height: 200px;
     background: linear-gradient( rgb(42, 95, 165), rgb(29, 75, 135));
     border: 4px solid rgb(12, 47, 90);
@@ -512,13 +521,14 @@ body {
 .fill.mp {
     width: 46%;
     height: 100%;
-    background: rgb(127, 200, 255);
+    background: rgb(13, 183, 70);
 }
 
 .value {
     font-size: 15px;
 }
 
+/* ETIQUETA EQUIPOS */
 .container {
     max-width: 1200px;
     margin: auto;
@@ -591,6 +601,115 @@ body {
     text-align: center;
     background-color: lightcoral;
     border-radius: 10px;
+}
+
+/*CARRUSEL*/
+
+.label_equipacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+
+.equipacion__title {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(135deg, rgb(250, 204, 21), rgb(255, 255, 255), rgb(59, 130, 246));
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.equipacion__price {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color:rgb(50, 115, 207);
+    width: 70%;
+    height: 40px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+}
+
+.tienda__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.tienda {
+    width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.tienda__track {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+.tienda__carrusel {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carrusel__text{
+    background-color: #0071c5;
+    background-size: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.carrusel__img {
+    width: 70%;
+    display: block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.button__styleIzq,
+.button__styleDer {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button__img {
+    width: 40px;
+    transition: transform 0.2s;
+}
+
+.button__img:hover {
+    transform: scale(1.15);
+}
+
+.carrusel__points {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 8px;
+}
+
+.carrusel__point {
+    width: 12px;
+    height: 12px;
+    background: #0071c5;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carrusel__point.active {
+    background: #333;
 }
 
 /*FOOTER*/
@@ -697,4 +816,368 @@ body {
 
 .footer__links a:hover {
     color: #0071c5;
+}
+.proximos__logotipo{
+    display: flex;
+    gap: 25px;
+}
+
+.proximos__equipo__inazuma{
+    display: flex;
+    justify-self: center;
+    width: 600px;
+}
+
+.proximos__imagen__gif{
+    position: absolute;
+    margin-top: 100px;
+}
+
+
+.proximos__imagen__gif2{
+    position: absolute;
+}
+
+.proximos__title__proximos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+    
+}
+
+.proximos__section{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+
+.proximos__title__section{
+    display: flex;
+    justify-content: center;
+}
+
+.proximos__box__partidos{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 25px;
+    margin-bottom: 100px;
+}
+
+.proximos__primer{
+    display: flex;
+    background-color: var(--white-color);
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 90%;
+    border: solid;
+    border-radius: 15px;
+}
+
+
+.proximos__box__raimon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__raimon{
+    display: flex;
+    width: 55px;
+    height: 55px;
+}
+
+.proximos__vs{
+    display: flex;
+    font: 1.5em sans-serif;
+    color: var(--red-color);
+    align-items: center;
+}
+
+.proximos__box__royal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__royal{
+    display: flex;
+    width: 55px;
+    height: 55px;
+}
+
+
+.proximos__segundo{
+    display: flex;
+    background-color: var(--white-color);
+    align-items: center;
+    gap: 25px;
+    flex-direction: column;
+    height: 90%;
+    width: 600px;
+    border: solid;
+    border-radius: 15px;
+}
+
+.proximos__box__occult{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__occult{
+    display: flex;
+    width: 55px;
+    height: 55px;
+}
+
+.proximos__box__zeus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__zeus{
+    display: flex;
+    width: 55px;
+    height: 55px;
+}
+
+.proximos__lateral{
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.proximos__navs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font: 1.5em sans-serif;
+    margin-left: 10px;
+}
+
+.proximos__nav1{
+    display: flex;
+    text-decoration: none;
+}
+
+.proximos__nav2{
+    display: flex;
+    text-decoration: none;
+}
+
+.proximos__nav3{
+    display: flex;
+    text-decoration: none;
+}
+
+.proximos__nav4{
+    display: flex;
+    text-decoration: none;
+}
+
+.proximos__section1{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.proximos__section__lugares{
+    display: grid;
+    grid-column: 2;
+    grid-row: 3;
+    justify-content: center;
+}
+
+
+.proximos__title__lugar{
+    display: flex;
+    justify-content: center;
+}
+
+.proximos__section__horas{
+    display: flex;
+    justify-content: center;
+}
+
+.proximos__horario{
+    display: flex;
+    justify-content: center;
+}
+
+.proximos__title__horario{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.proximos__tercero{
+    display: flex;
+    background-color: var(--white-color);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 600px;
+    border: solid;
+    border-radius: 15px;
+}
+
+.proximos__box__equipo{
+    display: flex;
+    gap: 20px;
+}
+
+.proximos__box__shuriken{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__shuriken{
+    display: flex;
+    width: 55px;
+    height: 55px;
+}
+
+.proximos__box__farm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__farm{
+    display: flex;
+    width: 55px;
+    height: 55px;
+}
+
+
+.proximos__cuarto{
+    display: flex;
+    background-color: var(--white-color);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 600px;
+    border: solid;
+    border-radius: 15px;
+}
+
+.proximos__box__wild{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__wild{
+    display: flex;
+    width: 55px;
+    height: 55px;
+}
+
+.proximos__box__aggron{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__aggron{
+    display: flex;
+    width: 80px;
+    height: 80px;
+}
+
+
+.proximos__lugares{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.proximos__estadios{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.proximos__estadio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.proximos__raimon__vs__royal{
+    display: flex;
+    justify-content: center;
+    color: var(--orange-color);
+}
+
+.proximos__otro__color{
+    color: var(--green-color);
+}
+
+.proximos__estadio__img{
+    display: flex;
+    width: 250px;
+    height: 250px;
+}
+
+.proximos__occult__vs__zeus{
+    display: flex;
+    justify-content: center;
+    color: var(--black-color);
+}
+
+.proximos__otro__color_z{
+    color: var(--primary-color);
+}
+
+.proximos__shuriken__vs__farm{
+    display: flex;
+    justify-content: center;
+    color: var(--violet-color);
+}
+
+.proximos__otro__color_f{
+    color: var(--orange-color);
+}
+
+.proximos__wild__vs__aggron{
+    display: flex;
+    justify-content: center;
+    color: var(--green-color);
+}
+
+.proximos__otro__color_a{
+    color: var(--white-color);
+}
+
+.proximos__horarios{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    height: 90%;
+    width: 400px;
+}
+
+.proximos__horas{
+    display: flex;
+    background-color: var(--white-color);
+    font: 1em sans-serif;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.proximos__grande{
+    display: flex;
+    font: 2em sans-serif;
 }
