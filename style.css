@@ -834,6 +834,16 @@ body {
     justify-self: right;
 }
 
+.proximos__imagen__gif3{
+    display: flex;
+}
+
+.proximos__tarzan{
+    display: flex;
+    width: 400px;
+    height: 250px;
+}
+
 .proximos__pinguino{
     display: flex;
     width: 400px;
