@@ -826,13 +826,11 @@ body {
 }
 
 .proximos__imagen__gif{
-    position: absolute;
-    justify-self: left;
+    display: flex;
 }
 
 
 .proximos__imagen__gif2{
-    position: absolute;
     justify-self: right;
 }
 
@@ -1151,7 +1149,7 @@ body {
 }
 
 .proximos__otro__color_f{
-    color: var(--orange-color);
+    color: var(--red-color);
 }
 
 .proximos__wild__vs__aggron{
