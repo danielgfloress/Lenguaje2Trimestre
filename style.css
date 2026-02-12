@@ -16,6 +16,7 @@
     --primary-font: 'Montserrat', sans-serif;
     --title-font: 'Bangers', cursive;
     --pixel-font: 'Press Start 2P', cursive;
+    --gold-color: gold;
 }
 
 body {
@@ -418,25 +419,29 @@ body {
     padding: 15px;
     border-radius: 20px;
 }
-.card__container{
+
+.card__container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 5px;
-    background: linear-gradient( rgb(42, 95, 165), rgb(29, 75, 135));
+    background: linear-gradient(rgb(42, 95, 165), rgb(29, 75, 135));
     width: 750px;
-    border-radius: 5px;
+    border-radius: 10px 10px 0 0;
     margin-top: 10px;
 }
-.card__stat--tipe{
+
+.card__stat--tipe {
     color: rgb(194, 230, 255);
     margin-top: -5px;
 }
-.card__stat--number{
+
+.card__stat--number {
     color: rgb(244, 239, 223);
     margin-top: -5px;
 }
+
 .card {
     display: flex;
     justify-content: center;
@@ -444,7 +449,7 @@ body {
     margin: 10px;
     width: 700px;
     height: 200px;
-    background: linear-gradient( rgb(42, 95, 165), rgb(29, 75, 135));
+    background: linear-gradient(rgb(42, 95, 165), rgb(29, 75, 135));
     border: 4px solid rgb(12, 47, 90);
     border-radius: 8px;
     padding: 8px;
@@ -452,13 +457,14 @@ body {
     font-family: var(--pixel-font);
 }
 
-.card__box{
+.card__box {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.card__img{
+.card__img {
     height: 100%;
     width: 100%;
 }
@@ -543,22 +549,23 @@ body {
 .value {
     font-size: 15px;
 }
-.card__stats{
+
+.card__stats {
     display: flex;
     flex-direction: column;
     background: rgb(11, 46, 85);
     width: 300px;
     height: 400px;
     gap: 30px;
-    padding: 20px;
-    background: linear-gradient( rgb(42, 95, 165), rgb(29, 75, 135));
+    background: linear-gradient(rgb(42, 95, 165), rgb(29, 75, 135));
     border: 4px solid rgb(12, 47, 90);
     border-radius: 8px;
     padding: 8px;
     box-shadow: 0 4px 0 rgb(8, 33, 63);
     font-family: var(--pixel-font);
 }
-.card__stat{
+
+.card__stat {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -567,13 +574,15 @@ body {
     border: 1px solid var(--primary-color-transparent);
     margin-top: 15px;
 }
-.supertecnicas{
+
+.supertecnicas {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
-.card__title{
+
+.card__title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -584,17 +593,60 @@ body {
     box-shadow: 0 4px 0 rgb(8, 33, 63);
     color: rgb(194, 216, 255);
 }
-.card__supertecnica{
+
+.card__supertecnica {
     display: flex;
     align-items: center;
     background-color: var(--primary-color-transparent);
-    
+    height: 30px;
 }
-.card__supertecnica--img{
+.line{
+    color: 2px solid var(--white-color);
+    width: 100%;
+    margin-top: 0;
+}
+.card__supertecnica--title {
+    margin-left: 10px;
+    font-size: 12px;
+    color: rgb(217, 61, 61);
+    text-shadow:
+        -2px -2px 0 white,
+        2px -2px 0 white,
+        -2px 2px 0 white,
+        2px 2px 0 white,
+        -2px 0 0 white,
+        2px 0 0 white,
+        0 -2px 0 white,
+        0 2px 0 white;
+}
+
+.card__supertecnica--img {
     margin-left: 10px;
     height: 25px;
     width: 35px;
 }
+
+.campo{
+    background-image: url(images/campo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    height: 500px;
+}
+.estrategia{
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 50px;
+    width: 750px;
+    font-family: var(--pixel-font);
+}
+.estrategia__title{
+    font-size: 20px;
+    color: var(--gold-color);
+    margin-left: 20px;
+}
+
 /* ETIQUETA EQUIPOS */
 
 .container {
@@ -651,7 +703,7 @@ body {
 
 .stats__win {
     text-align: center;
-    background-color:lightgreen;
+    background-color: lightgreen;
     border-radius: 10px;
 }
 
@@ -776,48 +828,49 @@ body {
 .footer__links a:hover {
     color: #0071c5;
 }
-.proximos__logotipo{
+
+.proximos__logotipo {
     display: flex;
     gap: 25px;
 }
 
-.proximos__equipo__inazuma{
+.proximos__equipo__inazuma {
     display: flex;
     justify-self: center;
     width: 600px;
 }
 
-.proximos__imagen__gif{
+.proximos__imagen__gif {
     position: absolute;
     margin-top: 100px;
 }
 
 
-.proximos__imagen__gif2{
+.proximos__imagen__gif2 {
     position: absolute;
 }
 
-.proximos__title__proximos{
+.proximos__title__proximos {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 300px;
-    
+
 }
 
-.proximos__section{
+.proximos__section {
     display: flex;
     width: 100%;
     height: 100%;
 }
 
 
-.proximos__title__section{
+.proximos__title__section {
     display: flex;
     justify-content: center;
 }
 
-.proximos__box__partidos{
+.proximos__box__partidos {
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -825,7 +878,7 @@ body {
     margin-bottom: 100px;
 }
 
-.proximos__primer{
+.proximos__primer {
     display: flex;
     background-color: var(--white-color);
     align-items: center;
@@ -837,39 +890,39 @@ body {
 }
 
 
-.proximos__box__raimon{
+.proximos__box__raimon {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.proximos__raimon{
+.proximos__raimon {
     display: flex;
     width: 55px;
     height: 55px;
 }
 
-.proximos__vs{
+.proximos__vs {
     display: flex;
     font: 1.5em sans-serif;
     color: var(--red-color);
     align-items: center;
 }
 
-.proximos__box__royal{
+.proximos__box__royal {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.proximos__royal{
+.proximos__royal {
     display: flex;
     width: 55px;
     height: 55px;
 }
 
 
-.proximos__segundo{
+.proximos__segundo {
     display: flex;
     background-color: var(--white-color);
     align-items: center;
@@ -881,37 +934,37 @@ body {
     border-radius: 15px;
 }
 
-.proximos__box__occult{
+.proximos__box__occult {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.proximos__occult{
+.proximos__occult {
     display: flex;
     width: 55px;
     height: 55px;
 }
 
-.proximos__box__zeus{
+.proximos__box__zeus {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.proximos__zeus{
+.proximos__zeus {
     display: flex;
     width: 55px;
     height: 55px;
 }
 
-.proximos__lateral{
+.proximos__lateral {
     display: grid;
     grid-column: 1;
     grid-row: 1;
 }
 
-.proximos__navs{
+.proximos__navs {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -919,34 +972,34 @@ body {
     margin-left: 10px;
 }
 
-.proximos__nav1{
+.proximos__nav1 {
     display: flex;
     text-decoration: none;
 }
 
-.proximos__nav2{
+.proximos__nav2 {
     display: flex;
     text-decoration: none;
 }
 
-.proximos__nav3{
+.proximos__nav3 {
     display: flex;
     text-decoration: none;
 }
 
-.proximos__nav4{
+.proximos__nav4 {
     display: flex;
     text-decoration: none;
 }
 
-.proximos__section1{
+.proximos__section1 {
     display: flex;
     justify-self: center;
     justify-content: center;
     gap: 25px;
 }
 
-.proximos__section__lugares{
+.proximos__section__lugares {
     display: grid;
     grid-column: 2;
     grid-row: 3;
@@ -954,28 +1007,28 @@ body {
 }
 
 
-.proximos__title__lugar{
+.proximos__title__lugar {
     display: flex;
     justify-content: center;
 }
 
-.proximos__section__horas{
+.proximos__section__horas {
     display: flex;
     justify-content: center;
 }
 
-.proximos__horario{
+.proximos__horario {
     display: flex;
     justify-content: center;
 }
 
-.proximos__title__horario{
+.proximos__title__horario {
     display: flex;
     justify-content: center;
     height: 100px;
 }
 
-.proximos__tercero{
+.proximos__tercero {
     display: flex;
     background-color: var(--white-color);
     align-items: center;
@@ -987,37 +1040,37 @@ body {
     border-radius: 15px;
 }
 
-.proximos__box__equipo{
+.proximos__box__equipo {
     display: flex;
     gap: 20px;
 }
 
-.proximos__box__shuriken{
+.proximos__box__shuriken {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.proximos__shuriken{
+.proximos__shuriken {
     display: flex;
     width: 55px;
     height: 55px;
 }
 
-.proximos__box__farm{
+.proximos__box__farm {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.proximos__farm{
+.proximos__farm {
     display: flex;
     width: 55px;
     height: 55px;
 }
 
 
-.proximos__cuarto{
+.proximos__cuarto {
     display: flex;
     background-color: var(--white-color);
     align-items: center;
@@ -1029,97 +1082,97 @@ body {
     border-radius: 15px;
 }
 
-.proximos__box__wild{
+.proximos__box__wild {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.proximos__wild{
+.proximos__wild {
     display: flex;
     width: 55px;
     height: 55px;
 }
 
-.proximos__box__aggron{
+.proximos__box__aggron {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.proximos__aggron{
+.proximos__aggron {
     display: flex;
     width: 80px;
     height: 80px;
 }
 
 
-.proximos__lugares{
+.proximos__lugares {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 100px;
 }
 
-.proximos__estadios{
+.proximos__estadios {
     display: flex;
     justify-content: center;
     gap: 50px;
 }
 
-.proximos__estadio{
+.proximos__estadio {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.proximos__raimon__vs__royal{
+.proximos__raimon__vs__royal {
     display: flex;
     justify-content: center;
     color: var(--orange-color);
 }
 
-.proximos__otro__color{
+.proximos__otro__color {
     color: var(--green-color);
 }
 
-.proximos__estadio__img{
+.proximos__estadio__img {
     display: flex;
     width: 250px;
     height: 250px;
 }
 
-.proximos__occult__vs__zeus{
+.proximos__occult__vs__zeus {
     display: flex;
     justify-content: center;
     color: var(--black-color);
 }
 
-.proximos__otro__color_z{
+.proximos__otro__color_z {
     color: var(--primary-color);
 }
 
-.proximos__shuriken__vs__farm{
+.proximos__shuriken__vs__farm {
     display: flex;
     justify-content: center;
     color: var(--violet-color);
 }
 
-.proximos__otro__color_f{
+.proximos__otro__color_f {
     color: var(--orange-color);
 }
 
-.proximos__wild__vs__aggron{
+.proximos__wild__vs__aggron {
     display: flex;
     justify-content: center;
     color: var(--green-color);
 }
 
-.proximos__otro__color_a{
+.proximos__otro__color_a {
     color: var(--white-color);
 }
 
-.proximos__horarios{
+.proximos__horarios {
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -1127,7 +1180,7 @@ body {
     width: 400px;
 }
 
-.proximos__horas{
+.proximos__horas {
     display: flex;
     background-color: var(--white-color);
     font: 1em sans-serif;
@@ -1136,7 +1189,7 @@ body {
     align-items: center;
 }
 
-.proximos__grande{
+.proximos__grande {
     display: flex;
     font: 2em sans-serif;
 }
