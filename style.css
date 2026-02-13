@@ -652,12 +652,27 @@ body {
     display: flex;
     align-items:center;
     justify-content: center;
+    flex-direction: column;
     background-color:rgb(50, 115, 207);
     width: 70%;
-    height: 40px;
+    height: 80px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     color: white;
+}
+
+.equipacion__button{
+    margin-top: 5px;
+    padding: 8px 12px;
+    border: none;
+    background: white;
+    color:rgb(0, 113, 197);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.equipacion__button:hover {
+    background: rgb(234, 203, 81);
 }
 
 .store__wrap {
