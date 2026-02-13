@@ -1,9 +1,5 @@
-setTimeout(function() {
-    alert("INAZUMA ELEVEN");
-}, 500);
-
-const track = document.querySelector(".tienda__track");
-const slides = document.querySelectorAll(".tienda__carrusel");
+const track = document.querySelector(".store__track");
+const slides = document.querySelectorAll(".store__carrusel");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 const dotsContainer = document.getElementById("dotsContainer");
