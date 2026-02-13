@@ -620,6 +620,11 @@ body {
 
 .button__img{
     width: 25%;
+    transition: transform 0.2s;
+}
+
+.button__img:hover {
+    transform: scale(1.15);
 }
 
     /*CARRUSEL*/
