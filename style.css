@@ -1177,21 +1177,37 @@ body {
 .proximos__nav1{
     display: flex;
     text-decoration: none;
+    color: var(--white-color);
+    padding: 10px;
+    border: solid var(--white-color);
+    border-radius: 25px;
 }
 
 .proximos__nav2{
     display: flex;
     text-decoration: none;
+    padding: 10px;
+    color: var(--white-color);
+    border: solid var(--white-color);
+    border-radius: 25px;
 }
 
 .proximos__nav3{
     display: flex;
     text-decoration: none;
+    padding: 10px;
+    color: var(--white-color);
+    border: solid var(--white-color);
+    border-radius: 25px;
 }
 
 .proximos__nav4{
     display: flex;
     text-decoration: none;
+    padding: 10px;
+    color: var(--white-color);
+    border: solid var(--white-color);
+    border-radius: 25px;
 }
 
 .proximos__section1{
