@@ -7,12 +7,16 @@
     --secondary-color: rgb(255, 242, 53);
     --secondary-color-transparent: rgba(255, 242, 53, 0.473);
     --dark-blue: rgb(15, 52, 96);
+    --blue-color: rgb(50, 115, 207);
     --white-color: white;
     --black-color: black;
     --red-color: red;
     --orange-color: orange;
     --violet-color: violet;
     --green-color: #03583f;
+    --win-color: rgb(144, 238, 144);
+    --draw-color: rgb(249, 249, 213);
+    --defeat-color: rgb(240, 128, 128);
     --primary-font: 'Montserrat', sans-serif;
     --title-font: 'Bangers', cursive;
     --pixel-font: 'Press Start 2P', cursive;
@@ -193,7 +197,6 @@ body {
 .newsletter__text {
     font-size: 20px;
     width: 700px;
-
 }
 
 .newsletter__email {
@@ -540,7 +543,7 @@ body {
 }
 
 .box {
-    background: white;
+    background: var(--white-color);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -573,7 +576,7 @@ body {
 
 .stats__win {
     text-align: center;
-    background-color:lightgreen;
+    background-color:var(--win-color);
     border-radius: 10px;
 }
 
@@ -583,13 +586,13 @@ body {
 
 .stats__draw {
     text-align: center;
-    background-color: rgb(249, 249, 213);
+    background-color: var(--draw-color);
     border-radius: 10px;
 }
 
 .stats__lose {
     text-align: center;
-    background-color: lightcoral;
+    background-color: var(--defeat-color);
     border-radius: 10px;
 }
 
@@ -611,7 +614,7 @@ body {
 
 .button__distribution {
     border-radius: 25px;
-    background: white;
+    background: var(--white-color);
     text-decoration: none;
     width: 10%;
     height: 50px;
@@ -645,7 +648,6 @@ body {
     background: linear-gradient(135deg, rgb(250, 204, 21), rgb(255, 255, 255), rgb(59, 130, 246));
     font-weight: bold;
     border-radius: 10px;
-
 }
 
 .equipacion__price {
@@ -653,19 +655,19 @@ body {
     align-items:center;
     justify-content: center;
     flex-direction: column;
-    background-color:rgb(50, 115, 207);
+    background-color:var(--blue-color);
     width: 70%;
     height: 80px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    color: white;
+    color: var(--white-color);
 }
 
 .equipacion__button{
     margin-top: 5px;
     padding: 8px 12px;
     border: none;
-    background: white;
+    background: var(--white-color);
     color:rgb(0, 113, 197);
     border-radius: 6px;
     cursor: pointer;
@@ -735,7 +737,7 @@ body {
 .carrusel__point {
     width: 12px;
     height: 12px;
-    background: white;
+    background: var(--white-color);
     border-radius: 50%;
     cursor: pointer;
     transition: background 0.3s;
@@ -771,12 +773,13 @@ body {
 }
 
 .product__content {
-    background: white;
+    background: var(--white-color);
     padding: 15px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.08);
     text-align: center;
     transition: transform 0.2s ease;
+    cursor: pointer;
 }
 
 .product__content:hover {
@@ -798,14 +801,14 @@ body {
 .product__button {
     padding: 8px 12px;
     border: none;
-    background: #2563eb;
-    color: white;
+    background: rgb(37, 99, 235);
+    color: var(--white-color);
     border-radius: 6px;
     cursor: pointer;
 }
 
 .product__button:hover {
-    background: #1e40af;
+    background: rgb(30, 64, 175);
 }
 
 /*REPLICAS*/
@@ -835,7 +838,7 @@ body {
 /*FOOTER*/
 
 .footer {
-    background: rgb(3, 52, 109);
+    background: var(--dark-blue);
     padding: 32px 5%;
 }
 
@@ -856,7 +859,7 @@ body {
 
 .footer__newsletter a {
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
     font-size: 15px;
     font-weight: bold;
     margin-top: 10px;
@@ -864,12 +867,12 @@ body {
 
 .newsletter__text {
     font-weight: 500;
-    color: white;
+    color: var(--white-color);
 }
 
 .newsletter__link {
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
     font-weight: 600;
 }
 
@@ -884,7 +887,7 @@ body {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 16px;
-    color: white;
+    color: var(--white-color);
 }
 
 .column ul {
@@ -896,7 +899,7 @@ body {
 
 .column a {
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
     font-size: 12px;
     margin-top: 10px;
 }
@@ -912,7 +915,7 @@ body {
     flex-direction: column;
     align-items: center;
     font-size: 16px;
-    color: white;
+    color: var(--white-color);
 }
 
 .footer__links {
@@ -925,12 +928,12 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    color: white;
+    color: var(--white-color);
 }
 
 .footer__links a {
     text-decoration: underline;
-    color: white;
+    color: var(--white-color);
     font-size: 15px;
 }
 
