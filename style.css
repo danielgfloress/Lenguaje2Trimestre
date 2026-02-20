@@ -20,6 +20,10 @@
     --primary-font: 'Montserrat', sans-serif;
     --title-font: 'Bangers', cursive;
     --pixel-font: 'Press Start 2P', cursive;
+    --win-color: lightgreen;
+    --draw-color: rgb(249, 249, 213);
+    --lose-color: lightcoral;
+    --footer-color:rgb(3, 52, 109);
 }
 
 body {
@@ -527,6 +531,15 @@ body {
     font-size: 15px;
 }
 
+<<<<<<< HEAD
+=======
+/* ETIQUETA EQUIPOS */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 16px;
+}
+>>>>>>> paginaPrincipal_BertaDiaz
 
 /* EQUIPOS */
 
