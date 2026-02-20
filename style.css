@@ -835,6 +835,81 @@ body {
     border-radius: 10px;
 }
 
+/*MEDIA QUERYS PAGINA TIENDA*/
+@media (max-width: 480px) {
+
+    .header__title {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .index__title {
+        font-size: 24px;
+    }
+
+    .index__text {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .index__nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tickets__title,
+    .figures__title {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .product {
+        grid-template-columns: 1fr;
+    }
+
+    .store {
+        width: 100%;
+    }
+
+    .equipacion__price {
+        width: 90%;
+    }
+
+    .store__wrap {
+        gap: 10px;
+    }
+
+    .buttonCarrusel__img {
+        width: 25px;
+    }
+
+    .footer__bottom {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .tickets__title,
+    .figures__title {
+        width: 60%;
+    }
+
+    .product {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .store {
+        width: 80%;
+    }
+
+    .equipacion__price {
+        width: 80%;
+    }
+
+}
+
 /*FOOTER*/
 
 .footer {
