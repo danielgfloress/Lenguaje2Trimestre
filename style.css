@@ -1079,7 +1079,7 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 25px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 .proximos__primer{
@@ -1102,8 +1102,8 @@ body {
 
 .proximos__raimon{
     display: flex;
-    width: 55px;
-    height: 55px;
+    width: 80px;
+    height: 80px;
 }
 
 .proximos__vs{
@@ -1121,8 +1121,8 @@ body {
 
 .proximos__royal{
     display: flex;
-    width: 55px;
-    height: 55px;
+    width: 80px;
+    height: 80px;
 }
 
 
@@ -1130,7 +1130,7 @@ body {
     display: flex;
     background-color: var(--white-color);
     align-items: center;
-    gap: 25px;
+    justify-content: center;
     flex-direction: column;
     height: 90%;
     width: 600px;
@@ -1146,8 +1146,8 @@ body {
 
 .proximos__occult{
     display: flex;
-    width: 55px;
-    height: 55px;
+    width: 80px;
+    height: 80px;
 }
 
 .proximos__box__zeus{
@@ -1158,8 +1158,8 @@ body {
 
 .proximos__zeus{
     display: flex;
-    width: 55px;
-    height: 55px;
+    width: 80px;
+    height: 80px;
 }
 
 .proximos__lateral{
@@ -1259,6 +1259,7 @@ body {
 
 .proximos__box__equipo{
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
@@ -1270,8 +1271,8 @@ body {
 
 .proximos__shuriken{
     display: flex;
-    width: 55px;
-    height: 55px;
+    width: 80px;
+    height: 80px;
 }
 
 .proximos__box__farm{
@@ -1282,8 +1283,8 @@ body {
 
 .proximos__farm{
     display: flex;
-    width: 55px;
-    height: 55px;
+    width: 80px;
+    height: 80px;
 }
 
 
@@ -1307,8 +1308,8 @@ body {
 
 .proximos__wild{
     display: flex;
-    width: 55px;
-    height: 55px;
+    width: 80px;
+    height: 80px;
 }
 
 .proximos__box__aggron{
