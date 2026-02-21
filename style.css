@@ -861,8 +861,6 @@ body {
 .proximos__section{
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 100%;
 }
 
 
@@ -1012,8 +1010,6 @@ body {
 .proximos__section1{
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 100%;
 }
 
 .proximos__section__lugares{
@@ -1208,4 +1204,28 @@ body {
 .proximos__grande{
     display: flex;
     font: 2em sans-serif;
+}
+
+
+@media (max-width:768px) {
+    .proximos__lateral{
+        width: 100%;
+    }
+
+    .proximos__equipo__inazuma{
+        width: 99%;
+    }
+    
+    .proximos__section,
+    .proximos__section1,
+    .proximos__section__horas,
+    .proximos__section__lugares{
+        width: 99%;
+    }
+
+    .proximos__imagen__gif,
+    .proximos__imagen__gif2,
+    .proximos__imagen__gif3{
+        width: 90%;
+    }
 }
