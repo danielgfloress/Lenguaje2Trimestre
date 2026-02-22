@@ -1195,6 +1195,14 @@ body {
     padding: 10px;
     border: solid var(--white-color);
     border-radius: 25px;
+    transition: transform 0.5s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.proximos__nav1:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
 
 .proximos__nav2{
@@ -1204,6 +1212,14 @@ body {
     color: var(--white-color);
     border: solid var(--white-color);
     border-radius: 25px;
+    transition: transform 0.5s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.proximos__nav2:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
 
 .proximos__nav3{
@@ -1213,6 +1229,14 @@ body {
     color: var(--white-color);
     border: solid var(--white-color);
     border-radius: 25px;
+    transition: transform 0.5s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.proximos__nav3:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
 
 .proximos__nav4{
@@ -1222,6 +1246,14 @@ body {
     color: var(--white-color);
     border: solid var(--white-color);
     border-radius: 25px;
+    transition: transform 0.5s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.proximos__nav4:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
 
 .proximos__section1{
