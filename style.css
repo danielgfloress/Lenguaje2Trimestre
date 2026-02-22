@@ -1093,6 +1093,11 @@ body {
     border-radius: 15px;
 }
 
+.proximos__primer:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
 
 .proximos__box__raimon{
     display: flex;
@@ -1136,6 +1141,11 @@ body {
     width: 600px;
     border: solid;
     border-radius: 15px;
+}
+
+.proximos__segundo:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
 
 .proximos__box__occult{
@@ -1257,6 +1267,11 @@ body {
     border-radius: 15px;
 }
 
+.proximos__tercero:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
 .proximos__box__equipo{
     display: flex;
     align-items: center;
@@ -1298,6 +1313,11 @@ body {
     width: 600px;
     border: solid;
     border-radius: 15px;
+}
+
+.proximos__cuarto:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
 
 .proximos__box__wild{
