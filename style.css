@@ -895,8 +895,9 @@ body {
     }
 }
 
-/*FOOTER*/
+/*Proximos partidos*/
 
+<<<<<<< HEAD
 .footer {
     background: var(--dark-blue);
     padding: 30px 5%;
@@ -1014,6 +1015,8 @@ body {
 }
 
 
+=======
+>>>>>>> 366cf3fe4db0707d2d4138d38894bec993d727b0
 .proximos__logotipo{
     display: flex;
     gap: 25px;
@@ -1487,4 +1490,110 @@ body {
     .proximos__imagen__gif3{
         width: 90%;
     }
+}
+
+/*FOOTER*/
+
+.footer {
+    background: var(--dark-blue);
+    padding: 32px 5%;
+}
+
+.footer__newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(183, 182, 182);
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+}
+
+.footer__newsletter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__newsletter a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.newsletter__text {
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.newsletter__link {
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+    margin-bottom: 25px;
+}
+
+.column__title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--white-color);
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.column a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.column a:hover {
+    color: #0071c5;
+}
+
+.footer__bottom {
+    border-top: 1px solid rgb(183, 182, 182);
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    color: var(--white-color);
+}
+
+.footer__links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.footer__links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--white-color);
+}
+
+.footer__links a {
+    text-decoration: underline;
+    color: var(--white-color);
+    font-size: 15px;
+}
+
+.footer__links a:hover {
+    color: #0071c5;
 }
