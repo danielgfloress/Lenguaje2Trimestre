@@ -605,6 +605,13 @@ body {
     width: 100%;
     margin-top: 0;
 }
+#supertecnicas-container {
+    display: flex;
+    flex-direction: column; /* poner en columna para que se vean todas */
+    gap: 8px;
+    max-height: 350px;
+    overflow-y: auto; /* scroll si hay muchas */
+}
 .card__supertecnica--title {
     margin-left: 10px;
     font-size: 12px;
@@ -645,6 +652,10 @@ body {
     font-size: 20px;
     color: var(--gold-color);
     margin-left: 20px;
+}
+.campo__jugador{
+    height: 70px;
+    width: 70px;
 }
 .campo__jugador1{
     height: 40px;
@@ -755,14 +766,13 @@ body {
     align-items: center;
     width: 400px;
     height: 500px;
-    background-color: var(--primary-color);
-    
+    background-color: var(--dark-blue);
 }
 .banquillo__title{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(157, 153, 153);
+    background-color: rgb(214, 213, 213);
     margin-top: 30px;
     height: 25px;
     width: 150px;
@@ -771,13 +781,28 @@ body {
     color: var(--white-color);
 }
 .banquillo__box{
+    display: flex;
     margin-top: 50px;
-    background-color: rgba(157, 153, 153, 0.916);
+    background-color: rgb(214, 213, 213);
     border-radius: 20px;
-    height: 300px;
+    height: 250px;
     width: 300px;
 }
-
+.banquillo__link1{
+    margin: 50px 0 0 40px;
+}
+.banquillo__link2{
+    margin: 65px 0 0 20px;
+}
+.banquillo__link3{
+    margin: 60px 0 0 25px;
+}
+.banquillo__link4{
+    margin: 140px 0 0 -160px;
+}
+.banquillo__link5{
+    margin: 135px 0 0 35px;
+}
 /* ETIQUETA EQUIPOS */
 
 .container {
