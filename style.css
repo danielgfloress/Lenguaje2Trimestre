@@ -528,7 +528,7 @@ body {
 }
 
 
-/* EQUIPOS */
+    /* EQUIPOS */
 
 .gridTeams {
     display: grid;
@@ -602,7 +602,7 @@ body {
     padding: 20px 10px;
 }
 
-/*TIENDA*/
+    /*TIENDA*/
 
 .tienda__button {
     display: flex;
@@ -748,7 +748,6 @@ body {
 }
 
     /*ENTRADAS*/
-
 .tickets {
     padding: 20px 10px;
 }
@@ -811,8 +810,7 @@ body {
     background: rgb(30, 64, 175);
 }
 
-/*REPLICAS*/
-
+    /*REPLICAS*/
 .figures {
     padding: 40px 20px;
 }
@@ -837,84 +835,67 @@ body {
 
 /*MEDIA QUERYS PAGINA TIENDA*/
 @media (max-width: 480px) {
-
     .header__title {
         font-size: 22px;
         text-align: center;
     }
-
     .index__title {
         font-size: 24px;
     }
-
     .index__text {
         font-size: 14px;
         padding: 0 15px;
     }
-
     .index__nav {
         flex-direction: column;
         gap: 10px;
     }
-
     .tickets__title,
     .figures__title {
         width: 80%;
         font-size: 14px;
     }
-
     .product {
         grid-template-columns: 1fr;
     }
-
     .store {
         width: 100%;
     }
-
     .equipacion__price {
         width: 90%;
     }
-
     .store__wrap {
         gap: 10px;
     }
-
     .buttonCarrusel__img {
         width: 25px;
     }
-
     .footer__bottom {
         text-align: center;
     }
-
 }
 
 @media (max-width: 768px) {
-
     .tickets__title,
     .figures__title {
         width: 60%;
     }
-
     .product {
         grid-template-columns: repeat(2, 1fr);
     }
-
     .store {
         width: 80%;
     }
-
     .equipacion__price {
         width: 80%;
     }
-
 }
 
 /*FOOTER*/
 
 .footer {
     background: var(--dark-blue);
-    padding: 32px 5%;
+    padding: 30px 5%;
 }
 
 .footer__newsletter {
@@ -923,7 +904,7 @@ body {
     align-items: center;
     border-bottom: 1px solid rgb(183, 182, 182);
     padding-bottom: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 }
 
 .footer__newsletter ul {
@@ -932,7 +913,7 @@ body {
     margin: 0;
 }
 
-.footer__newsletter a {
+.newsletter__link {
     text-decoration: none;
     color: var(--white-color);
     font-size: 15px;
@@ -943,12 +924,6 @@ body {
 .newsletter__text {
     font-weight: 500;
     color: var(--white-color);
-}
-
-.newsletter__link {
-    text-decoration: none;
-    color: var(--white-color);
-    font-weight: 600;
 }
 
 .gridContainer {
@@ -971,16 +946,25 @@ body {
     margin: 0;
 }
 
-
-.column a {
+.column__link {
     text-decoration: none;
     color: var(--white-color);
     font-size: 12px;
     margin-top: 10px;
 }
 
-.column a:hover {
+.column__link:hover {
     color: #0071c5;
+}
+
+.column__social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social__img{
+    width: 35%;
 }
 
 .footer__bottom {
@@ -999,22 +983,33 @@ body {
     margin-top: 10px;
 }
 
-.footer__links ul {
+.bottom__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     list-style: none;
     padding: 0;
     margin: 0;
     color: var(--white-color);
 }
 
-.footer__links a {
-    text-decoration: underline;
+.bottom__link-style {
+    text-decoration: none;
     color: var(--white-color);
     font-size: 15px;
 }
 
-.footer__links a:hover {
+.bottom__link-style:hover {
     color: #0071c5;
 }
+
+.copyright__bottom{
+    font-size: 10px;
+    color: rgb(210, 203, 203);
+}
+
+
 .proximos__logotipo{
     display: flex;
     gap: 25px;
