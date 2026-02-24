@@ -607,10 +607,10 @@ body {
 }
 #supertecnicas-container {
     display: flex;
-    flex-direction: column; /* poner en columna para que se vean todas */
+    flex-direction: column; 
     gap: 8px;
     max-height: 350px;
-    overflow-y: auto; /* scroll si hay muchas */
+    overflow-y: auto; 
 }
 .card__supertecnica--title {
     margin-left: 10px;
@@ -656,6 +656,7 @@ body {
 .campo__jugador{
     height: 70px;
     width: 70px;
+    cursor: pointer;
 }
 .campo__jugador1{
     height: 40px;
@@ -665,6 +666,7 @@ body {
     position: relative;
     left: 150px;
     top: 420px;
+    cursor: pointer;
 }
 .campo__jugador2{
     height: 60px;
@@ -674,6 +676,7 @@ body {
     position: relative;
     right: 5px;
     top: 322px;
+    cursor: pointer;
 }
 .campo__jugador3{
     height: 50px;
@@ -683,6 +686,7 @@ body {
     position: relative;
     left: 46px;
     top: 350px;
+    cursor: pointer;
 }
 .campo__jugador4{
     height: 50px;
@@ -692,6 +696,7 @@ body {
     position: relative;
     left: 95px;
     top: 320px;
+    cursor: pointer;
 }
 .campo__jugador5{
     height: 60px;
@@ -701,6 +706,7 @@ body {
     position: relative;
     right: 60px;
     top: 260px;
+    cursor: pointer;
 }
 .campo__jugador6{
     height: 50px;
@@ -710,6 +716,7 @@ body {
     position: relative;
     right:0px;
     top: 200px;
+    cursor: pointer;
 }
 .campo__jugador7{
     height: 60px;
@@ -719,6 +726,7 @@ body {
     position: relative;
     left: 30px;
     top: 150px;
+    cursor: pointer;
 }
 .campo__jugador8{
     height: 60px;
@@ -728,6 +736,7 @@ body {
     position: relative;
     left: 90px;
     top: 60px;
+    cursor: pointer;
 }
 .campo__jugador9{
     height: 60px;
@@ -737,6 +746,7 @@ body {
     position: relative;
     left: -90px;
     top: -5px;
+    cursor: pointer;
 }
 .campo__jugador10{
     height: 50px;
@@ -746,6 +756,7 @@ body {
     position: relative;
     left: -16px;
     top: -30px;
+    cursor: pointer;
 }
 .campo__jugador11{
     height: 50px;
@@ -755,6 +766,7 @@ body {
     position: relative;
     left: 60px;
     top: -10px;
+    cursor: pointer;
 }
 .alineacion{
     display: flex;
@@ -790,18 +802,23 @@ body {
 }
 .banquillo__link1{
     margin: 50px 0 0 40px;
+    cursor: pointer;
 }
 .banquillo__link2{
     margin: 65px 0 0 20px;
+    cursor: pointer;
 }
 .banquillo__link3{
     margin: 60px 0 0 25px;
+    cursor: pointer;
 }
 .banquillo__link4{
     margin: 140px 0 0 -160px;
+    cursor: pointer;
 }
 .banquillo__link5{
     margin: 135px 0 0 35px;
+    cursor: pointer;
 }
 /* ETIQUETA EQUIPOS */
 
