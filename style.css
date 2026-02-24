@@ -24,6 +24,7 @@
     --draw-color: rgb(249, 249, 213);
     --defeat-color: lightcoral;
     --footer-color:rgb(3, 52, 109);
+    --gold-color: gold;
 }
 
 body {
@@ -425,19 +426,37 @@ body {
     padding: 15px;
     border-radius: 20px;
 }
-.card__container{
+
+.card__container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background: linear-gradient(rgb(42, 95, 165), rgb(29, 75, 135));
+    width: 750px;
+    border-radius: 10px 10px 0 0;
+    margin-top: 10px;
+}
+
+.card__stat--tipe {
+    color: rgb(194, 230, 255);
+    margin-top: -5px;
+}
+
+.card__stat--number {
+    color: rgb(244, 239, 223);
+    margin-top: -5px;
 }
 
 .card {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    width: 50%;
+    margin: 10px;
+    width: 700px;
     height: 200px;
-    background: linear-gradient( rgb(42, 95, 165), rgb(29, 75, 135));
+    background: linear-gradient(rgb(42, 95, 165), rgb(29, 75, 135));
     border: 4px solid rgb(12, 47, 90);
     border-radius: 8px;
     padding: 8px;
@@ -445,7 +464,14 @@ body {
     font-family: var(--pixel-font);
 }
 
-.card__img{
+.card__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card__img {
     height: 100%;
     width: 100%;
 }
@@ -489,12 +515,12 @@ body {
     font-size: 20px;
 }
 
-.stats {
+.estadisticas {
     margin-top: 40px;
     font-size: 15px;
 }
 
-.stat {
+.estadistica {
     display: flex;
     align-items: center;
     margin-top: 4px;
@@ -515,13 +541,13 @@ body {
     overflow: hidden;
 }
 
-.fill.hp {
+.fill__hp {
     width: 68%;
     height: 100%;
     background: rgb(240, 208, 48);
 }
 
-.fill.mp {
+.fill__mp {
     width: 46%;
     height: 100%;
     background: rgb(13, 183, 70);
@@ -531,6 +557,276 @@ body {
     font-size: 15px;
 }
 
+.card__stats {
+    display: flex;
+    flex-direction: column;
+    background: rgb(11, 46, 85);
+    width: 300px;
+    height: 400px;
+    gap: 30px;
+    background: linear-gradient(rgb(42, 95, 165), rgb(29, 75, 135));
+    border: 4px solid rgb(12, 47, 90);
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 4px 0 rgb(8, 33, 63);
+    font-family: var(--pixel-font);
+}
+
+.card__stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color-transparent);
+    height: 15px;
+    border: 1px solid var(--primary-color-transparent);
+    margin-top: 15px;
+}
+
+.supertecnicas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    margin: 0;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 0 4px 0 rgb(8, 33, 63);
+    color: rgb(194, 216, 255);
+}
+
+.card__supertecnica {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color-transparent);
+    height: 30px;
+}
+.line{
+    color: 2px solid var(--white-color);
+    width: 100%;
+    margin-top: 0;
+}
+#supertecnicas-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 8px;
+    max-height: 350px;
+    overflow-y: auto; 
+}
+.card__supertecnica--title {
+    margin-left: 10px;
+    font-size: 12px;
+    color: rgb(217, 61, 61);
+    text-shadow:
+        -2px -2px 0 white,
+        2px -2px 0 white,
+        -2px 2px 0 white,
+        2px 2px 0 white,
+        -2px 0 0 white,
+        2px 0 0 white,
+        0 -2px 0 white,
+        0 2px 0 white;
+}
+
+.card__supertecnica--img {
+    margin-left: 10px;
+    height: 25px;
+    width: 35px;
+}
+
+.campo{
+    background-image: url(images/campo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    height: 500px;
+}
+.estrategia{
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 50px;
+    width: 750px;
+    font-family: var(--pixel-font);
+}
+.estrategia__title{
+    font-size: 20px;
+    color: var(--gold-color);
+    margin-left: 20px;
+}
+.campo__jugador{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+}
+.campo__jugador1{
+    height: 40px;
+    width: 40px;
+}
+.campo__jugador1--position{
+    position: relative;
+    left: 150px;
+    top: 420px;
+    cursor: pointer;
+}
+.campo__jugador2{
+    height: 60px;
+    width: 50px;
+}
+.campo__jugador2--position{
+    position: relative;
+    right: 5px;
+    top: 322px;
+    cursor: pointer;
+}
+.campo__jugador3{
+    height: 50px;
+    width: 50px;
+}
+.campo__jugador3--position{
+    position: relative;
+    left: 46px;
+    top: 350px;
+    cursor: pointer;
+}
+.campo__jugador4{
+    height: 50px;
+    width: 50px;
+}
+.campo__jugador4--position{
+    position: relative;
+    left: 95px;
+    top: 320px;
+    cursor: pointer;
+}
+.campo__jugador5{
+    height: 60px;
+    width: 50px;
+}
+.campo__jugador5--position{
+    position: relative;
+    right: 60px;
+    top: 260px;
+    cursor: pointer;
+}
+.campo__jugador6{
+    height: 50px;
+    width: 50px;
+}
+.campo__jugador6--position{
+    position: relative;
+    right:0px;
+    top: 200px;
+    cursor: pointer;
+}
+.campo__jugador7{
+    height: 60px;
+    width: 50px;
+}
+.campo__jugador7--position{
+    position: relative;
+    left: 30px;
+    top: 150px;
+    cursor: pointer;
+}
+.campo__jugador8{
+    height: 60px;
+    width: 50px;
+}
+.campo__jugador8--position{
+    position: relative;
+    left: 90px;
+    top: 60px;
+    cursor: pointer;
+}
+.campo__jugador9{
+    height: 60px;
+    width: 50px;
+}
+.campo__jugador9--position{
+    position: relative;
+    left: -90px;
+    top: -5px;
+    cursor: pointer;
+}
+.campo__jugador10{
+    height: 50px;
+    width: 50px;
+}
+.campo__jugador10--position{
+    position: relative;
+    left: -16px;
+    top: -30px;
+    cursor: pointer;
+}
+.campo__jugador11{
+    height: 50px;
+    width: 50px;
+}
+.campo__jugador11--position{
+    position: relative;
+    left: 60px;
+    top: -10px;
+    cursor: pointer;
+}
+.alineacion{
+    display: flex;
+
+}
+.alineacion__banquillo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    background-color: var(--dark-blue);
+}
+.banquillo__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(214, 213, 213);
+    margin-top: 30px;
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 4px 0 rgb(8, 33, 63);
+    color: var(--white-color);
+}
+.banquillo__box{
+    display: flex;
+    margin-top: 50px;
+    background-color: rgb(214, 213, 213);
+    border-radius: 20px;
+    height: 250px;
+    width: 300px;
+}
+.banquillo__link1{
+    margin: 50px 0 0 40px;
+    cursor: pointer;
+}
+.banquillo__link2{
+    margin: 65px 0 0 20px;
+    cursor: pointer;
+}
+.banquillo__link3{
+    margin: 60px 0 0 25px;
+    cursor: pointer;
+}
+.banquillo__link4{
+    margin: 140px 0 0 -160px;
+    cursor: pointer;
+}
+.banquillo__link5{
+    margin: 135px 0 0 35px;
+    cursor: pointer;
+}
 
     /* EQUIPOS */
 
@@ -929,6 +1225,10 @@ body {
     border-radius: 10px;
 }
 
+.footer__links a:hover {
+    color: #0071c5;
+}
+
 /*MEDIA QUERYS PAGINA TIENDA*/
 @media (max-width: 480px) {
     .header__title {
@@ -994,19 +1294,19 @@ body {
     gap: 25px;
 }
 
-.proximos__equipo__inazuma{
+.proximos__equipo__inazuma {
     display: flex;
     justify-self: center;
     width: 600px;
     box-shadow: 0 5px 30px var(--black-color);
 }
 
-.proximos__imagen__gif{
+.proximos__imagen__gif {
     display: flex;
 }
 
 
-.proximos__imagen__gif2{
+.proximos__imagen__gif2 {
     justify-self: right;
 }
 
@@ -1026,26 +1326,26 @@ body {
     height: 250px;
 }
 
-.proximos__title__proximos{
+.proximos__title__proximos {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 300px;
-    
+
 }
 
-.proximos__section{
+.proximos__section {
     display: flex;
     justify-content: center;
 }
 
 
-.proximos__title__section{
+.proximos__title__section {
     display: flex;
     justify-content: center;
 }
 
-.proximos__box__partidos{
+.proximos__box__partidos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1053,7 +1353,7 @@ body {
     margin-bottom: 10px;
 }
 
-.proximos__primer{
+.proximos__primer {
     display: flex;
     background-color: var(--white-color);
     align-items: center;
@@ -1071,39 +1371,39 @@ body {
 }
 
 
-.proximos__box__raimon{
+.proximos__box__raimon {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.proximos__raimon{
+.proximos__raimon {
     display: flex;
     width: 80px;
     height: 80px;
 }
 
-.proximos__vs{
+.proximos__vs {
     display: flex;
     font: 1.5em sans-serif;
     color: var(--red-color);
     align-items: center;
 }
 
-.proximos__box__royal{
+.proximos__box__royal {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.proximos__royal{
+.proximos__royal {
     display: flex;
     width: 80px;
     height: 80px;
 }
 
 
-.proximos__segundo{
+.proximos__segundo {
     display: flex;
     background-color: var(--white-color);
     align-items: center;
@@ -1121,25 +1421,25 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
 
-.proximos__box__occult{
+.proximos__box__occult {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.proximos__occult{
+.proximos__occult {
     display: flex;
     width: 80px;
     height: 80px;
 }
 
-.proximos__box__zeus{
+.proximos__box__zeus {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.proximos__zeus{
+.proximos__zeus {
     display: flex;
     width: 80px;
     height: 80px;
@@ -1152,14 +1452,14 @@ body {
     margin-bottom: 50px;
 }
 
-.proximos__navs{
+.proximos__navs {
     display: flex;
     gap: 35px;
     font: 1.5em sans-serif;
     margin-left: 10px;
 }
 
-.proximos__nav1{
+.proximos__nav1 {
     display: flex;
     text-decoration: none;
     color: var(--white-color);
@@ -1176,7 +1476,7 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
 
-.proximos__nav2{
+.proximos__nav2 {
     display: flex;
     text-decoration: none;
     padding: 10px;
@@ -1193,7 +1493,7 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
 
-.proximos__nav3{
+.proximos__nav3 {
     display: flex;
     text-decoration: none;
     padding: 10px;
@@ -1210,7 +1510,7 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
 
-.proximos__nav4{
+.proximos__nav4 {
     display: flex;
     text-decoration: none;
     padding: 10px;
@@ -1227,40 +1527,41 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
 
-.proximos__section1{
+.proximos__section1 {
     display: flex;
     justify-content: center;
 }
 
-.proximos__section__lugares{
-    display: flex;
-    flex-direction: column;
+.proximos__section__lugares {
+    display: grid;
+    grid-column: 2;
+    grid-row: 3;
     justify-content: center;
 }
 
 
-.proximos__title__lugar{
+.proximos__title__lugar {
     display: flex;
     justify-content: center;
 }
 
-.proximos__section__horas{
+.proximos__section__horas {
     display: flex;
     justify-content: center;
 }
 
-.proximos__horario{
+.proximos__horario {
     display: flex;
     justify-content: center;
 }
 
-.proximos__title__horario{
+.proximos__title__horario {
     display: flex;
     justify-content: center;
     height: 100px;
 }
 
-.proximos__tercero{
+.proximos__tercero {
     display: flex;
     background-color: var(--white-color);
     align-items: center;
@@ -1278,38 +1579,38 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
 
-.proximos__box__equipo{
+.proximos__box__equipo {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.proximos__box__shuriken{
+.proximos__box__shuriken {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.proximos__shuriken{
+.proximos__shuriken {
     display: flex;
     width: 80px;
     height: 80px;
 }
 
-.proximos__box__farm{
+.proximos__box__farm {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.proximos__farm{
+.proximos__farm {
     display: flex;
     width: 80px;
     height: 80px;
 }
 
 
-.proximos__cuarto{
+.proximos__cuarto {
     display: flex;
     background-color: var(--white-color);
     align-items: center;
@@ -1327,98 +1628,98 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
 }
 
-.proximos__box__wild{
+.proximos__box__wild {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.proximos__wild{
+.proximos__wild {
     display: flex;
     width: 80px;
     height: 80px;
 }
 
-.proximos__box__aggron{
+.proximos__box__aggron {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.proximos__aggron{
+.proximos__aggron {
     display: flex;
     width: 80px;
     height: 80px;
 }
 
 
-.proximos__lugares{
+.proximos__lugares {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 100px;
 }
 
-.proximos__estadios{
+.proximos__estadios {
     display: flex;
     justify-content: center;
     gap: 50px;
 }
 
-.proximos__estadio{
+.proximos__estadio {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.proximos__raimon__vs__royal{
+.proximos__raimon__vs__royal {
     display: flex;
     justify-content: center;
     color: var(--orange-color);
 }
 
-.proximos__otro__color{
+.proximos__otro__color {
     color: var(--green-color);
 }
 
-.proximos__estadio__img{
+.proximos__estadio__img {
     display: flex;
     width: 250px;
     height: 250px;
     box-shadow: 0 5px 30px var(--black-color);
 }
 
-.proximos__occult__vs__zeus{
+.proximos__occult__vs__zeus {
     display: flex;
     justify-content: center;
     color: var(--black-color);
 }
 
-.proximos__otro__color_z{
+.proximos__otro__color_z {
     color: var(--primary-color);
 }
 
-.proximos__shuriken__vs__farm{
+.proximos__shuriken__vs__farm {
     display: flex;
     justify-content: center;
     color: var(--violet-color);
 }
 
-.proximos__otro__color_f{
-    color: var(--red-color);
+.proximos__otro__color_f {
+    color: var(--orange-color);
 }
 
-.proximos__wild__vs__aggron{
+.proximos__wild__vs__aggron {
     display: flex;
     justify-content: center;
     color: var(--green-color);
 }
 
-.proximos__otro__color_a{
+.proximos__otro__color_a {
     color: var(--white-color);
 }
 
-.proximos__horarios{
+.proximos__horarios {
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -1426,7 +1727,7 @@ body {
     width: 400px;
 }
 
-.proximos__horas{
+.proximos__horas {
     display: flex;
     background-color: var(--white-color);
     font: 1em sans-serif;
@@ -1435,7 +1736,7 @@ body {
     align-items: center;
 }
 
-.proximos__grande{
+.proximos__grande {
     display: flex;
     font: 2em sans-serif;
 }

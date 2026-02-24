@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alineación</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
     <header class="header">
         <div class="header__content">
             <img class="header__logo" src="images/logo.png" alt="Inazuma Eleven">
-            <h1 class="header__title">Inazuma Japón</h1>
+            <h1 class="header__number">Inazuma Japón</h1>
         </div>
     </header>
 
@@ -20,54 +21,151 @@
         <div class="index__overlay">
             <div class="index__content">
                 <h1 class="index__title">Alineación <br>&nbsp;&nbsp;&nbsp;&nbsp;En Partido</h1>
-                <p class="index__text">Así es como juega Inazuma Japón <br>en su primer partido del Futbol Frontier Internacional</p>
+                <p class="index__text">Así es como juega Inazuma Japón <br>en su primer partido del Futbol Frontier
+                    Internacional</p>
             </div>
             <nav class="index__nav">
                 <a href="index.html" class="index__link">Inicio</a>
-                <a href="" class="index__link">Plantilla</a>
-                <a href="" class="index__link">Equipos</a>
-                <a href="" class="index__link">Partidos</a>
+                <a href="plantilla.html" class="index__link">Plantilla</a>
+                <a href="equipos.html" class="index__link">Equipos</a>
+                <a href="Proximos_partidos.html" class="index__link">Partidos</a>
                 <a href="" class="index__link">Noticias</a>
                 <a href="" class="index__link">Tienda</a>
             </nav>
         </div>
     </section>
-    <div class="card__container">
-        <div class="card">
-            <div class="avatar">
-                <img class="card__img" src="images/Captura de pantalla 2026-02-10 094257.png" alt="">
-            </div>
-
-            <div class="info">
-                <div class="top">
-                    <div class="name">
-                        Jude Sharp
-                        <span class="gender">♂</span>
-                    </div>
-                    <div class="level">Nv. 16</div>
+    <div class="card__box">
+        <div class="card__container">
+            <div class="card">
+                <div class="avatar">
+                    <img id="card-img" class="card__img" src="images/Captura de pantalla 2026-02-10 094257.png">
                 </div>
-
-                <div class="stats">
-                    <div class="stat">
-                        <div class="label">PE</div>
-                        <div class="bar">
-                            <div class="fill hp"></div>
+                <div class="info">
+                    <div class="top">
+                        <div class="name">
+                            <span id="card-name">Jude Sharp</span>
+                            <span id="card-gender" class="gender">♂</span>
                         </div>
-                        <div class="value">34 / 58</div>
+                        <div id="card-level" class="level">Nv. 16</div>
                     </div>
-
-                    <div class="stat">
-                        <div class="label">PT</div>
-                        <div class="bar">
-                            <div class="fill mp"></div>
+                    <div class="estadisticas">
+                        <div class="estadistica">
+                            <div class="label">PE</div>
+                            <div class="bar">
+                                <div id="card-hp-bar" class="fill__hp"></div>
+                            </div>
+                            <div id="card-hp-text" class="value">34 / 58</div>
                         </div>
-                        <div class="value">32 / 78</div>
+                        <div class="estadistica">
+                            <div class="label">PT</div>
+                            <div class="bar">
+                                <div id="card-mp-bar" class="fill__mp"></div>
+                            </div>
+                            <div id="card-mp-text" class="value">32 / 78</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="supertecnicas">
+                <div class="card__container--stats">
+                    <div class="card__stats">
+                        <div class="card__stat">
+                            <h2 class="card__stat--tipe">Tiro</h2>
+                            <h2 id="stat-tiro" class="card__stat--number">27</h2>
+                        </div>
+                        <div class="card__stat">
+                            <h2 class="card__stat--tipe">Físico</h2>
+                            <h2 id="stat-fisico" class="card__stat--number">29</h2>
+                        </div>
+                        <div class="card__stat">
+                            <h2 class="card__stat--tipe">Control</h2>
+                            <h2 id="stat-control" class="card__stat--number">30</h2>
+                        </div>
+                        <div class="card__stat">
+                            <h2 class="card__stat--tipe">Defensa</h2>
+                            <h2 id="stat-defensa" class="card__stat--number">24</h2>
+                        </div>
+                        <div class="card__stat">
+                            <h2 class="card__stat--tipe">Rapidez</h2>
+                            <h2 id="stat-rapidez" class="card__stat--number">28</h2>
+                        </div>
+                        <div class="card__stat">
+                            <h2 class="card__stat--tipe">Valor</h2>
+                            <h2 id="stat-valor" class="card__stat--number">26</h2>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card__stats">
+                    <h4 class="card__title">SUPERTECNICAS</h4>
+                    <div id="supertecnicas-container">
+                        
                     </div>
                 </div>
             </div>
         </div>
+        <div class="estrategia">
+            <h2 class="estrategia__title">Estrategia de partido</h2>
+        </div>
+        <div class="alineacion">
+            <div class="campo">
+                <a class="campo__jugador1--position" data-player="mark">
+                    <img class="campo__jugador1" src="images/Mark.png">
+                </a>
+                <a class="campo__jugador2--position" data-player="gabi">
+                    <img class="campo__jugador2" src="images/Gabi.png">
+                </a>
+                <a class="campo__jugador3--position" data-player="jack">
+                    <img class="campo__jugador3" src="images/Jack.png">
+                </a>
+                <a class="campo__jugador4--position" data-player="shawn">
+                    <img class="campo__jugador4" src="images/Shawn.png">
+                </a>
+                <a class="campo__jugador5--position" data-player="ricardo">
+                    <img class="campo__jugador5" src="images/Ricardo.png">
+                </a>
+                <a class="campo__jugador6--position" data-player="jude">
+                    <img class="campo__jugador6" src="images/Jude 2026-02-12 135735.png">
+                </a>
+                <a class="campo__jugador7--position" data-player="nosaka">
+                    <img class="campo__jugador7" src="images/Nosaka.png">
+                </a>
+                <a class="campo__jugador8--position" data-player="sol">
+                    <img class="campo__jugador8" src="images/Sol.png">
+                </a>
+                <a class="campo__jugador9--position" data-player="byron">
+                    <img class="campo__jugador9" src="images/Byron.png">
+                </a>
+                <a class="campo__jugador10--position" data-player="axel">
+                    <img class="campo__jugador10" src="images/Axel.png">
+                </a>
+                <a class="campo__jugador11--position" data-player="hiroto">
+                    <img class="campo__jugador11" src="images/Hiroto.png">
+                </a>
+            </div>
+            <div class="alineacion__banquillo">
+                <h4 class="banquillo__title">SUPLENTES</h4>
+                <div class="banquillo__box">
+                    <a class="banquillo__link1" data-player="terry">
+                        <img class="campo__jugador" src="images/Terry.png" alt="">
+                    </a>
+                    <a class="banquillo__link2" data-player="nathan">
+                        <img class="campo__jugador1" src="images/Nathan.png" alt="">
+                    </a>
+                    <a class="banquillo__link3" data-player="goldie">
+                        <img class="campo__jugador11" src="images/Goldie.png" alt="">
+                    </a>
+                    <a class="banquillo__link4" data-player="arion">
+                        <img class="campo__jugador11" src="images/Arion.png" alt="">
+                    </a>
+                    <a class="banquillo__link5" data-player="fei">
+                        <img class="campo__jugador11" src="images/Fei.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-
+<script src="script.js"></script>
 </body>
 
 </html>
