@@ -646,6 +646,7 @@ body {
     background-position: center;
     width: 350px;
     height: 500px;
+    border-radius: 0 0 0 10px;
 }
 .estrategia{
     display: flex;
@@ -777,7 +778,6 @@ body {
 }
 .alineacion{
     display: flex;
-
 }
 .alineacion__banquillo{
     display: flex;
@@ -785,7 +785,9 @@ body {
     align-items: center;
     width: 400px;
     height: 500px;
-    background-color: var(--dark-blue);
+    background-color: var(--primary-color);
+    margin-bottom: 10px;
+    border-radius: 0 0 10px 0;
 }
 .banquillo__title{
     display: flex;
