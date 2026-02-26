@@ -1746,7 +1746,7 @@ body {
 
 @media (max-width:768px) {
     .proximos__lateral{
-        width: 100%;
+        width: 99%;
     }
 
     .proximos__equipo__inazuma{
