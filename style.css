@@ -1832,86 +1832,86 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .header__content { margin-left: 50px; }
-  .index__content { margin-left: 50px; }
+    .header__content { margin-left: 50px; }
+    .index__content { margin-left: 50px; }
 
-  .index__title { font-size: 60px; width: 90%; }
-  .index__text { font-size: 20px; width: 90%; }
+    .index__title { font-size: 60px; width: 90%; }
+    .index__text { font-size: 20px; width: 90%; }
 
-  .index__nav { gap: 25px; flex-wrap: wrap; height: auto; padding-bottom: 20px; }
+    .index__nav { gap: 25px; flex-wrap: wrap; height: auto; padding-bottom: 20px; }
 
-  .titulo { font-size: 50px; }
+    .titulo { font-size: 50px; }
 
-  .newsletter__box { width: 90%; height: auto; padding: 30px 20px; }
-  .newsletter__text { width: 90%; }
-  .newsletter__input { width: 380px; }
+    .newsletter__box { width: 90%; height: auto; padding: 30px 20px; }
+    .newsletter__text { width: 90%; }
+    .newsletter__input { width: 380px; }
 
-  .explora__tarjetas { width: 100%; flex-wrap: wrap; padding: 0 20px; }
-  .explora__tarjeta { width: 300px; }
+    .explora__tarjetas { width: 100%; flex-wrap: wrap; padding: 0 20px; }
+    .explora__tarjeta { width: 300px; }
 
-  .destacada__img { height: 280px; }
-  .destacada__title { font-size: 22px; }
-  .destacada__text { font-size: 16px; }
+    .destacada__img { height: 280px; }
+    .destacada__title { font-size: 22px; }
+    .destacada__text { font-size: 16px; }
 
-  .recientes__tarjetas { flex-wrap: wrap; justify-content: center; }
-  .recientes__tarjeta { width: 45%; }
+    .recientes__tarjetas { flex-wrap: wrap; justify-content: center; }
+    .recientes__tarjeta { width: 45%; }
 
 }
 
 @media (max-width: 768px) {
-  .header { flex-direction: column; height: auto; padding: 10px 0; text-align: center; }
-  .header__content { margin-left: 0; justify-content: center; align-items: center; gap: 10px; }
-  .header__title { font-size: 32px; }
-  .header__logo { width: 80px; }
+    .header { flex-direction: column; height: auto; padding: 10px 0; text-align: center; }
+    .header__content { margin-left: 0; justify-content: center; align-items: center; gap: 10px; }
+    .header__title { font-size: 32px; }
+    .header__logo { width: 80px; }
 
-  .index { height: auto; }
-  .index__overlay { height: auto; padding: 40px 16px; }
-  .index__content { margin-left: 0; padding: 10px; }
-  .index__title { font-size: 42px; width: 100%; }
-  .index__text { width: 100%; font-size: 16px; margin-top: 10px; }
-  .index__nav { flex-direction: column; gap: 16px; height: auto; }
-  .index__link, .index__link-seleccionado { width: 180px; }
+    .index { height: auto; }
+    .index__overlay { height: auto; padding: 40px 16px; }
+    .index__content { margin-left: 0; padding: 10px; }
+    .index__title { font-size: 42px; width: 100%; }
+    .index__text { width: 100%; font-size: 16px; margin-top: 10px; }
+    .index__nav { flex-direction: column; gap: 16px; height: auto; }
+    .index__link, .index__link-seleccionado { width: 180px; }
 
-  .titulo { font-size: 40px; }
-  .destacados { margin-top: 60px; }
+    .titulo { font-size: 40px; }
+    .destacados { margin-top: 60px; }
 
-  .newsletter { margin-top: 70px; padding: 0 12px; }
-  .newsletter__box { width: 100%; padding: 25px 15px; }
-  .newsletter__text { width: 100%; font-size: 16px; }
-  .newsletter__email { flex-direction: column; width: 100%; align-items: center; gap: 12px; }
-  .newsletter__input { width: 100%; max-width: 520px; }
-  .newsletter__button { height: 45px; }
+    .newsletter { margin-top: 70px; padding: 0 12px; }
+    .newsletter__box { width: 100%; padding: 25px 15px; }
+    .newsletter__text { width: 100%; font-size: 16px; }
+    .newsletter__email { flex-direction: column; width: 100%; align-items: center; gap: 12px; }
+    .newsletter__input { width: 100%; max-width: 520px; }
+    .newsletter__button { height: 45px; }
 
-  .explora { margin-top: 70px; margin-bottom: 70px; }
-  .explora__tarjetas { flex-direction: column; width: 100%; padding: 0 12px; }
-  .explora__tarjeta { width: 100%; max-width: 360px; }
+    .explora { margin-top: 70px; margin-bottom: 70px; }
+    .explora__tarjetas { flex-direction: column; width: 100%; padding: 0 12px; }
+    .explora__tarjeta { width: 100%; max-width: 360px; }
 
-  .noticias { margin-top: 60px; margin-bottom: 60px; }
-  .destacada__tarjeta { flex-direction: column; }
-  .destacada__img { width: 100%; height: 220px; border-radius: 12px 12px 0 0; }
-  .destacada__texts { width: 100%; padding: 18px; }
-  .destacada__title { font-size: 20px; }
-  .destacada__text { font-size: 15px; }
-  .recientes__tarjetas { flex-direction: column; }
-  .recientes__tarjeta { width: 100%; }
+    .noticias { margin-top: 60px; margin-bottom: 60px; }
+    .destacada__tarjeta { flex-direction: column; }
+    .destacada__img { width: 100%; height: 220px; border-radius: 12px 12px 0 0; }
+    .destacada__texts { width: 100%; padding: 18px; }
+    .destacada__title { font-size: 20px; }
+    .destacada__text { font-size: 15px; }
+    .recientes__tarjetas { flex-direction: column; }
+    .recientes__tarjeta { width: 100%; }
 
 }
 
 @media (max-width: 480px) {
-  .header__title { font-size: 26px; }
-  .header__logo { width: 70px; }
+    .header__title { font-size: 26px; }
+    .header__logo { width: 70px; }
 
-  .index__title { font-size: 34px; }
-  .index__text { font-size: 14px; }
+    .index__title { font-size: 34px; }
+    .index__text { font-size: 14px; }
 
-  .boton { font-size: 16px; padding: 12px; }
+    .boton { font-size: 16px; padding: 12px; }
 
-  .newsletter__text { font-size: 14px; }
-  .newsletter__input { padding: 12px; }
+    .newsletter__text { font-size: 14px; }
+    .newsletter__input { padding: 12px; }
 
-  .explora__texto { width: 90%; }
+    .explora__texto { width: 90%; }
 
-  .recientes__titulo { font-size: 1rem; }
-  .recientes__texto { font-size: 0.85rem; }
+    .recientes__titulo { font-size: 1rem; }
+    .recientes__texto { font-size: 0.85rem; }
 
 }
