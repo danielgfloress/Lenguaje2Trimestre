@@ -1846,6 +1846,10 @@ body {
     .newsletter__text { width: 90%; }
     .newsletter__input { width: 380px; }
 
+    .card__container { width: 95%; }
+    .card { width: 95%; }
+    .card__stats { width: 320px; }
+
     .explora__tarjetas { width: 100%; flex-wrap: wrap; padding: 0 20px; }
     .explora__tarjeta { width: 300px; }
 
@@ -1855,6 +1859,17 @@ body {
 
     .recientes__tarjetas { flex-wrap: wrap; justify-content: center; }
     .recientes__tarjeta { width: 45%; }
+
+    .tienda__button { margin-right: 20px; }
+    .button__distribution { width: 140px; }
+
+    .store { width: 420px; }
+    .carrusel__img { width: 80%; }
+
+    .tickets_title, .figures_title { width: 50%; }
+
+    .footer__newsletter { flex-direction: column; gap: 15px; text-align: center; }
+    .footer__links { flex-wrap: wrap; gap: 10px; }
 
 }
 
@@ -1895,6 +1910,25 @@ body {
     .recientes__tarjetas { flex-direction: column; }
     .recientes__tarjeta { width: 100%; }
 
+    .card__container { width: 95%; }
+    .card { width: 95%; height: auto; flex-direction: column; gap: 12px; font-size: 12px; }
+
+    .tienda__button { justify-content: center; margin-right: 0; }
+    .button__distribution { width: 170px; }
+
+    .store__wrap { flex-direction: column; gap: 12px; }
+    .store { width: 95%; max-width: 420px; }
+
+    .label_equipacion { width: 95%; }
+    .equipacion__price { width: 85%; }
+
+    .tickets_title, .figures_title { width: 80%; }
+
+    .footer { padding: 25px 12px; }
+    .gridContainer { gap: 18px; }
+    .footer__bottom { padding: 18px 0; }
+    .bottom__links { flex-wrap: wrap; }
+
 }
 
 @media (max-width: 480px) {
@@ -1913,5 +1947,11 @@ body {
 
     .recientes__titulo { font-size: 1rem; }
     .recientes__texto { font-size: 0.85rem; }
+
+    .tickets_title, .figures_title { width: 95%; }
+
+    .footer__links { justify-content: center; }
+    .bottom__link-style { font-size: 13px; }
+    .copyright__bottom { font-size: 9px; }
 
 }
