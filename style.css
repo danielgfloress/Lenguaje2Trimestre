@@ -1685,34 +1685,6 @@ body {
     font: 2em sans-serif;
 }
 
-@media (max-width: 1024px) {
-    .proximos_equipo_inazuma { width: 95%; }
-  .proximos_title_proximos { margin-left: 0; justify-content: center; }
-
-  .proximos__primer,
-  .proximos__segundo,
-  .proximos__tercero,
-  .proximos__cuarto { width: 95%; }
-
-  .proximos__estadios { flex-wrap: wrap; }
-}
-
-@media (max-width: 768px) {
-    .proximos__lateral { width: 100%; margin: 30px 0; }
-  .proximos__navs { flex-wrap: wrap; justify-content: center; margin-left: 0; }
-  .proximos_nav1, .proximosnav2, .proximosnav3, .proximos_nav4 { justify-content: center; }
-
-  .proximos__primer,
-  .proximos__segundo,
-  .proximos__tercero,
-  .proximos__cuarto { width: 95%; }
-
-  .proximos__estadios { flex-direction: column; align-items: center; gap: 25px; }
-  .proximos_estadio_img { width: 220px; height: 220px; }
-
-  .proximos__horarios { width: 95%; max-width: 420px; margin: 0 auto; }
-}
-
     /*FOOTER*/
 
 .footer {
@@ -1860,6 +1832,16 @@ body {
     .recientes__tarjetas { flex-wrap: wrap; justify-content: center; }
     .recientes__tarjeta { width: 45%; }
 
+    .proximos_equipo_inazuma { width: 95%; }
+    .proximos_title_proximos { margin-left: 0; justify-content: center; }
+
+    .proximos__primer,
+    .proximos__segundo,
+    .proximos__tercero,
+    .proximos__cuarto { width: 95%; }
+
+    .proximos__estadios { flex-wrap: wrap; }
+
     .tienda__button { margin-right: 20px; }
     .button__distribution { width: 140px; }
 
@@ -1909,6 +1891,20 @@ body {
     .destacada__text { font-size: 15px; }
     .recientes__tarjetas { flex-direction: column; }
     .recientes__tarjeta { width: 100%; }
+
+    .proximos__lateral { width: 100%; margin: 30px 0; }
+    .proximos__navs { flex-wrap: wrap; justify-content: center; margin-left: 0; }
+    .proximos_nav1, .proximosnav2, .proximosnav3, .proximos_nav4 { justify-content: center; }
+
+    .proximos__primer,
+    .proximos__segundo,
+    .proximos__tercero,
+    .proximos__cuarto { width: 95%; }
+
+    .proximos__estadios { flex-direction: column; align-items: center; gap: 25px; }
+    .proximos_estadio_img { width: 220px; height: 220px; }
+
+    .proximos__horarios { width: 95%; max-width: 420px; margin: 0 auto; }
 
     .card__container { width: 95%; }
     .card { width: 95%; height: auto; flex-direction: column; gap: 12px; font-size: 12px; }
