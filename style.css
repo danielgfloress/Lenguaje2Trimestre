@@ -1245,30 +1245,6 @@ body {
     box-shadow: 0 5px 30px var(--black-color);
 }
 
-.proximos__imagen__gif {
-    display: flex;
-}
-
-
-.proximos__imagen__gif2 {
-    justify-self: right;
-}
-
-.proximos__imagen__gif3{
-    display: flex;
-}
-
-.proximos__tarzan{
-    display: flex;
-    width: 400px;
-    height: 251px;
-}
-
-.proximos__pinguino{
-    display: flex;
-    width: 400px;
-    height: 250px;
-}
 
 .proximos__title__proximos {
     display: flex;
@@ -1280,7 +1256,9 @@ body {
 
 .proximos__section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-top: 100px;
 }
 
 
@@ -1291,7 +1269,6 @@ body {
 
 .proximos__box__partidos {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     gap: 25px;
     margin-bottom: 10px;
@@ -1473,7 +1450,9 @@ body {
 
 .proximos__section1 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-top: 100px;
 }
 
 .proximos__section__lugares {
@@ -1481,6 +1460,7 @@ body {
     grid-column: 2;
     grid-row: 3;
     justify-content: center;
+    margin-top: 100px;
 }
 
 
@@ -1599,15 +1579,15 @@ body {
 
 .proximos__lugares {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    gap: 90px;
     margin-bottom: 100px;
 }
 
 .proximos__estadios {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 90px;
 }
 
 .proximos__estadio {
@@ -1668,21 +1648,23 @@ body {
     flex-direction: column;
     justify-self: center;
     height: 90%;
-    width: 400px;
+    width: 500px;
 }
 
 .proximos__horas {
     display: flex;
     background-color: var(--white-color);
-    font: 1em sans-serif;
+    font: 1.5em sans-serif;
     justify-content: space-between;
     gap: 20px;
     align-items: center;
+    box-shadow: 0 5px 30px var(--black-color);
 }
 
 .proximos__grande {
     display: flex;
     font: 2em sans-serif;
+    font-family: monospace; 
 }
 
     /*FOOTER*/
