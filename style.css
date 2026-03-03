@@ -928,30 +928,6 @@ body {
     box-shadow: 0 5px 30px var(--black-color);
 }
 
-.proximos__imagen__gif{
-    display: flex;
-}
-
-
-.proximos__imagen__gif2{
-    justify-self: right;
-}
-
-.proximos__imagen__gif3{
-    display: flex;
-}
-
-.proximos__tarzan{
-    display: flex;
-    width: 400px;
-    height: 251px;
-}
-
-.proximos__pinguino{
-    display: flex;
-    width: 400px;
-    height: 250px;
-}
 
 .proximos__title__proximos{
     display: flex;
