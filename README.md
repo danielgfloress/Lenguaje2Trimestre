@@ -2,14 +2,14 @@
 
 ## 👥 Integrantes del grupo
 
-* **Berta Diaz** - Equipos, Tienda (Carrusel) y CSS
+* **Berta Diaz** - Equipos, Tienda junto con carrusel y CSS
 * **Daniel Flores** - Index, Noticias y CSS
 * **Diego Carnicero** - Partidos, README y CSS
 * **Carlos Muñoz** - Alineación, Plantilla, Script y CSS
 
 ## 🖥️ Descripción del proyecto
 
-Nuestra página web sigue los partidos de fútbol de los equipos del momento (Ráimon, Royal Academy, 
+Nuestra página web sigue los partidos de fútbol de los equipos del momento (Raimon, Royal Academy, 
 Academia Zeus, Wild, Farm, ...). Mostrando sus estadisticas, su posicionamiento en el campo a la 
 hora de jugar, entre muchos datos de los equipos e individualmente.
 También existe la tienda oficial de recuerdos y productos de los equipos y partidos que han jugado 
