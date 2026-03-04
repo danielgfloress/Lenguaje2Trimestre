@@ -20,6 +20,11 @@
     --primary-font: 'Montserrat', sans-serif;
     --title-font: 'Bangers', cursive;
     --pixel-font: 'Press Start 2P', cursive;
+    --win-color: lightgreen;
+    --draw-color: rgb(249, 249, 213);
+    --defeat-color: lightcoral;
+    --footer-color:rgb(3, 52, 109);
+    --gold-color: gold;
 }
 
 body {
@@ -421,19 +426,37 @@ body {
     padding: 15px;
     border-radius: 20px;
 }
-.card__container{
+
+.card__container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background: linear-gradient(rgb(42, 95, 165), rgb(29, 75, 135));
+    width: 750px;
+    border-radius: 10px 10px 0 0;
+    margin-top: 10px;
+}
+
+.card__stat--tipe {
+    color: rgb(194, 230, 255);
+    margin-top: -5px;
+}
+
+.card__stat--number {
+    color: rgb(244, 239, 223);
+    margin-top: -5px;
 }
 
 .card {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    width: 50%;
+    margin: 10px;
+    width: 700px;
     height: 200px;
-    background: linear-gradient( rgb(42, 95, 165), rgb(29, 75, 135));
+    background: linear-gradient(rgb(42, 95, 165), rgb(29, 75, 135));
     border: 4px solid rgb(12, 47, 90);
     border-radius: 8px;
     padding: 8px;
@@ -441,7 +464,14 @@ body {
     font-family: var(--pixel-font);
 }
 
-.card__img{
+.card__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card__img {
     height: 100%;
     width: 100%;
 }
@@ -485,12 +515,12 @@ body {
     font-size: 20px;
 }
 
-.stats {
+.estadisticas {
     margin-top: 40px;
     font-size: 15px;
 }
 
-.stat {
+.estadistica {
     display: flex;
     align-items: center;
     margin-top: 4px;
@@ -511,13 +541,13 @@ body {
     overflow: hidden;
 }
 
-.fill.hp {
+.fill__hp {
     width: 68%;
     height: 100%;
     background: rgb(240, 208, 48);
 }
 
-.fill.mp {
+.fill__mp {
     width: 46%;
     height: 100%;
     background: rgb(13, 183, 70);
@@ -527,6 +557,278 @@ body {
     font-size: 15px;
 }
 
+.card__stats {
+    display: flex;
+    flex-direction: column;
+    background: rgb(11, 46, 85);
+    width: 300px;
+    height: 400px;
+    gap: 30px;
+    background: linear-gradient(rgb(42, 95, 165), rgb(29, 75, 135));
+    border: 4px solid rgb(12, 47, 90);
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 4px 0 rgb(8, 33, 63);
+    font-family: var(--pixel-font);
+}
+
+.card__stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color-transparent);
+    height: 15px;
+    border: 1px solid var(--primary-color-transparent);
+    margin-top: 15px;
+}
+
+.supertecnicas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    margin: 0;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 0 4px 0 rgb(8, 33, 63);
+    color: rgb(194, 216, 255);
+}
+
+.card__supertecnica {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color-transparent);
+    height: 30px;
+}
+.line{
+    color: 2px solid var(--white-color);
+    width: 100%;
+    margin-top: 0;
+}
+#supertecnicas-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 8px;
+    max-height: 350px;
+    overflow-y: auto; 
+}
+.card__supertecnica--title {
+    margin-left: 10px;
+    font-size: 12px;
+    color: rgb(217, 61, 61);
+    text-shadow:
+        -2px -2px 0 white,
+        2px -2px 0 white,
+        -2px 2px 0 white,
+        2px 2px 0 white,
+        -2px 0 0 white,
+        2px 0 0 white,
+        0 -2px 0 white,
+        0 2px 0 white;
+}
+
+.card__supertecnica--img {
+    margin-left: 10px;
+    height: 25px;
+    width: 35px;
+}
+
+.campo{
+    background-image: url(images/campo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    height: 500px;
+    border-radius: 0 0 0 10px;
+}
+.estrategia{
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 50px;
+    width: 750px;
+    font-family: var(--pixel-font);
+}
+.estrategia__title{
+    font-size: 20px;
+    color: var(--gold-color);
+    margin-left: 20px;
+}
+.campo__jugador{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+}
+.campo__jugador1{
+    height: 40px;
+    width: 40px;
+}
+.campo__jugador1--position{
+    position: relative;
+    left: 150px;
+    top: 420px;
+    cursor: pointer;
+}
+.campo__jugador2{
+    height: 60px;
+    width: 50px;
+}
+.campo__jugador2--position{
+    position: relative;
+    right: 5px;
+    top: 322px;
+    cursor: pointer;
+}
+.campo__jugador3{
+    height: 50px;
+    width: 50px;
+}
+.campo__jugador3--position{
+    position: relative;
+    left: 46px;
+    top: 350px;
+    cursor: pointer;
+}
+.campo__jugador4{
+    height: 50px;
+    width: 50px;
+}
+.campo__jugador4--position{
+    position: relative;
+    left: 95px;
+    top: 320px;
+    cursor: pointer;
+}
+.campo__jugador5{
+    height: 60px;
+    width: 50px;
+}
+.campo__jugador5--position{
+    position: relative;
+    right: 60px;
+    top: 260px;
+    cursor: pointer;
+}
+.campo__jugador6{
+    height: 50px;
+    width: 50px;
+}
+.campo__jugador6--position{
+    position: relative;
+    right:0px;
+    top: 200px;
+    cursor: pointer;
+}
+.campo__jugador7{
+    height: 60px;
+    width: 50px;
+}
+.campo__jugador7--position{
+    position: relative;
+    left: 30px;
+    top: 150px;
+    cursor: pointer;
+}
+.campo__jugador8{
+    height: 60px;
+    width: 50px;
+}
+.campo__jugador8--position{
+    position: relative;
+    left: 90px;
+    top: 60px;
+    cursor: pointer;
+}
+.campo__jugador9{
+    height: 60px;
+    width: 50px;
+}
+.campo__jugador9--position{
+    position: relative;
+    left: -90px;
+    top: -5px;
+    cursor: pointer;
+}
+.campo__jugador10{
+    height: 50px;
+    width: 50px;
+}
+.campo__jugador10--position{
+    position: relative;
+    left: -16px;
+    top: -30px;
+    cursor: pointer;
+}
+.campo__jugador11{
+    height: 50px;
+    width: 50px;
+}
+.campo__jugador11--position{
+    position: relative;
+    left: 60px;
+    top: -10px;
+    cursor: pointer;
+}
+.alineacion{
+    display: flex;
+}
+.alineacion__banquillo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    background-color: var(--primary-color);
+    margin-bottom: 10px;
+    border-radius: 0 0 10px 0;
+}
+.banquillo__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(214, 213, 213);
+    margin-top: 30px;
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 4px 0 rgb(8, 33, 63);
+    color: var(--white-color);
+}
+.banquillo__box{
+    display: flex;
+    margin-top: 50px;
+    background-color: rgb(214, 213, 213);
+    border-radius: 20px;
+    height: 250px;
+    width: 300px;
+}
+.banquillo__link1{
+    margin: 50px 0 0 40px;
+    cursor: pointer;
+}
+.banquillo__link2{
+    margin: 65px 0 0 20px;
+    cursor: pointer;
+}
+.banquillo__link3{
+    margin: 60px 0 0 25px;
+    cursor: pointer;
+}
+.banquillo__link4{
+    margin: 140px 0 0 -160px;
+    cursor: pointer;
+}
+.banquillo__link5{
+    margin: 135px 0 0 35px;
+    cursor: pointer;
+}
 
     /* EQUIPOS */
 
@@ -600,6 +902,98 @@ body {
     max-width: 1200px;
     margin: auto;
     padding: 20px 10px;
+}
+
+/* noticias */
+
+.noticias {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.destacada {
+    margin-bottom: 60px;
+}
+
+.destacada__tarjeta {
+    display: flex;
+    gap: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--primary-color-transparent);
+    backdrop-filter: blur(4px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destacada__tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.destacada__img {
+    width: 50%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.destacada__texts {
+    width: 50%;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.destacada__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.destacada__text {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.recientes__tarjetas {
+    display: flex;
+    gap: 25px;
+}
+
+.recientes__tarjeta {
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 15px;
+    background-color: var(--primary-color-transparent);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recientes__tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.recientes__img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.recientes__titulo {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.recientes__texto {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    opacity: 0.85;
 }
 
     /*TIENDA*/
@@ -833,65 +1227,447 @@ body {
     border-radius: 10px;
 }
 
-/*MEDIA QUERYS PAGINA TIENDA*/
-@media (max-width: 480px) {
-    .header__title {
-        font-size: 22px;
-        text-align: center;
-    }
-    .index__title {
-        font-size: 24px;
-    }
-    .index__text {
-        font-size: 14px;
-        padding: 0 15px;
-    }
-    .index__nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .tickets__title,
-    .figures__title {
-        width: 80%;
-        font-size: 14px;
-    }
-    .product {
-        grid-template-columns: 1fr;
-    }
-    .store {
-        width: 100%;
-    }
-    .equipacion__price {
-        width: 90%;
-    }
-    .store__wrap {
-        gap: 10px;
-    }
-    .buttonCarrusel__img {
-        width: 25px;
-    }
-    .footer__bottom {
-        text-align: center;
-    }
+.footer__links a:hover {
+    color: #0071c5;
 }
 
-@media (max-width: 768px) {
-    .tickets__title,
-    .figures__title {
-        width: 60%;
-    }
-    .product {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .store {
-        width: 80%;
-    }
-    .equipacion__price {
-        width: 80%;
-    }
+/*Proximos partidos*/
+
+.proximos__logotipo{
+    display: flex;
+    gap: 25px;
 }
 
-/*FOOTER*/
+.proximos__equipo__inazuma {
+    display: flex;
+    justify-self: center;
+    width: 600px;
+    box-shadow: 0 5px 30px var(--black-color);
+}
+
+
+.proximos__title__proximos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+
+}
+
+.proximos__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.proximos__title__section {
+    display: flex;
+    justify-content: center;
+}
+
+.proximos__box__partidos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.proximos__primer {
+    display: flex;
+    background-color: var(--white-color);
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 90%;
+    border: solid;
+    border-radius: 15px;
+    transition: transform 0.5s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.proximos__primer:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
+
+.proximos__box__raimon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__raimon {
+    display: flex;
+    width: 80px;
+    height: 80px;
+}
+
+.proximos__vs {
+    display: flex;
+    font: 1.5em sans-serif;
+    color: var(--red-color);
+    align-items: center;
+}
+
+.proximos__box__royal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__royal {
+    display: flex;
+    width: 80px;
+    height: 80px;
+}
+
+
+.proximos__segundo {
+    display: flex;
+    background-color: var(--white-color);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90%;
+    width: 600px;
+    border: solid;
+    border-radius: 15px;
+    transition: transform 0.5s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.proximos__segundo:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
+.proximos__box__occult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__occult {
+    display: flex;
+    width: 80px;
+    height: 80px;
+}
+
+.proximos__box__zeus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__zeus {
+    display: flex;
+    width: 80px;
+    height: 80px;
+}
+
+.proximos__lateral{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.proximos__navs {
+    display: flex;
+    gap: 35px;
+    font: 1.5em sans-serif;
+    margin-left: 10px;
+}
+
+.proximos__nav1 {
+    display: flex;
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 10px;
+    border: solid var(--white-color);
+    border-radius: 25px;
+    transition: transform 0.5s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.proximos__nav1:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
+.proximos__nav2 {
+    display: flex;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--white-color);
+    border: solid var(--white-color);
+    border-radius: 25px;
+    transition: transform 0.5s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.proximos__nav2:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
+.proximos__nav3 {
+    display: flex;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--white-color);
+    border: solid var(--white-color);
+    border-radius: 25px;
+    transition: transform 0.5s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.proximos__nav3:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
+.proximos__nav4 {
+    display: flex;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--white-color);
+    border: solid var(--white-color);
+    border-radius: 25px;
+    transition: transform 0.5s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.proximos__nav4:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
+.proximos__section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.proximos__section__lugares {
+    display: grid;
+    grid-column: 2;
+    grid-row: 3;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.proximos__title__lugar {
+    display: flex;
+    justify-content: center;
+}
+
+.proximos__section__horas {
+    display: flex;
+    justify-content: center;
+}
+
+.proximos__horario {
+    display: flex;
+    justify-content: center;
+}
+
+.proximos__title__horario {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.proximos__tercero {
+    display: flex;
+    background-color: var(--white-color);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 600px;
+    border: solid;
+    border-radius: 15px;
+    transition: transform 0.5s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.proximos__tercero:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
+.proximos__box__equipo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.proximos__box__shuriken {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__shuriken {
+    display: flex;
+    width: 80px;
+    height: 80px;
+}
+
+.proximos__box__farm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__farm {
+    display: flex;
+    width: 80px;
+    height: 80px;
+}
+
+
+.proximos__cuarto {
+    display: flex;
+    background-color: var(--white-color);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 600px;
+    border: solid;
+    border-radius: 15px;
+    transition: transform 0.5s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.proximos__cuarto:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
+.proximos__box__wild {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__wild {
+    display: flex;
+    width: 80px;
+    height: 80px;
+}
+
+.proximos__box__aggron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos__aggron {
+    display: flex;
+    width: 80px;
+    height: 80px;
+}
+
+
+.proximos__lugares {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-bottom: 100px;
+}
+
+.proximos__estadios {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+.proximos__estadio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.proximos__raimon__vs__royal {
+    display: flex;
+    justify-content: center;
+    color: var(--orange-color);
+}
+
+.proximos__otro__color {
+    color: var(--green-color);
+}
+
+.proximos__estadio__img {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 5px 30px var(--black-color);
+}
+
+.proximos__occult__vs__zeus {
+    display: flex;
+    justify-content: center;
+    color: var(--black-color);
+}
+
+.proximos__otro__color_z {
+    color: var(--primary-color);
+}
+
+.proximos__shuriken__vs__farm {
+    display: flex;
+    justify-content: center;
+    color: var(--violet-color);
+}
+
+.proximos__otro__color_f {
+    color: var(--orange-color);
+}
+
+.proximos__wild__vs__aggron {
+    display: flex;
+    justify-content: center;
+    color: var(--green-color);
+}
+
+.proximos__otro__color_a {
+    color: var(--white-color);
+}
+
+.proximos__horarios {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    height: 90%;
+    width: 500px;
+}
+
+.proximos__horas {
+    display: flex;
+    background-color: var(--white-color);
+    font: 1.5em sans-serif;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0 5px 30px var(--black-color);
+}
+
+.proximos__grande {
+    display: flex;
+    font: 2em sans-serif;
+    font-family: monospace; 
+}
+
+    /*FOOTER*/
 
 .footer {
     background: var(--dark-blue);
@@ -1009,473 +1785,184 @@ body {
     color: rgb(210, 203, 203);
 }
 
+@media (max-width: 1024px) {
+    .header__content { margin-left: 50px; }
+    .index__content { margin-left: 50px; }
 
-.proximos__logotipo{
-    display: flex;
-    gap: 25px;
-}
-
-.proximos__equipo__inazuma{
-    display: flex;
-    justify-self: center;
-    width: 600px;
-}
-
-.proximos__imagen__gif{
-    display: flex;
-}
-
-
-.proximos__imagen__gif2{
-    justify-self: right;
-}
-
-.proximos__imagen__gif3{
-    display: flex;
-}
-
-.proximos__tarzan{
-    display: flex;
-    width: 400px;
-    height: 251px;
-}
-
-.proximos__pinguino{
-    display: flex;
-    width: 400px;
-    height: 250px;
-}
-
-.proximos__title__proximos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 300px;
-    
-}
-
-.proximos__section{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
-
-
-.proximos__title__section{
-    display: flex;
-    justify-content: center;
-}
-
-.proximos__box__partidos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 25px;
-    margin-bottom: 100px;
-}
-
-.proximos__primer{
-    display: flex;
-    background-color: var(--white-color);
-    align-items: center;
-    flex-direction: column;
-    width: 600px;
-    height: 90%;
-    border: solid;
-    border-radius: 15px;
-}
-
-
-.proximos__box__raimon{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.proximos__raimon{
-    display: flex;
-    width: 55px;
-    height: 55px;
-}
-
-.proximos__vs{
-    display: flex;
-    font: 1.5em sans-serif;
-    color: var(--red-color);
-    align-items: center;
-}
-
-.proximos__box__royal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.proximos__royal{
-    display: flex;
-    width: 55px;
-    height: 55px;
-}
-
-
-.proximos__segundo{
-    display: flex;
-    background-color: var(--white-color);
-    align-items: center;
-    gap: 25px;
-    flex-direction: column;
-    height: 90%;
-    width: 600px;
-    border: solid;
-    border-radius: 15px;
-}
-
-.proximos__box__occult{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.proximos__occult{
-    display: flex;
-    width: 55px;
-    height: 55px;
-}
-
-.proximos__box__zeus{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.proximos__zeus{
-    display: flex;
-    width: 55px;
-    height: 55px;
-}
-
-.proximos__lateral{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.proximos__navs{
-    display: flex;
-    gap: 35px;
-    font: 1.5em sans-serif;
-    margin-left: 10px;
-}
+    .index__title { font-size: 60px; width: 90%; }
+    .index__text { font-size: 20px; width: 90%; }
 
-.proximos__nav1{
-    display: flex;
-    text-decoration: none;
-}
-
-.proximos__nav2{
-    display: flex;
-    text-decoration: none;
-}
-
-.proximos__nav3{
-    display: flex;
-    text-decoration: none;
-}
-
-.proximos__nav4{
-    display: flex;
-    text-decoration: none;
-}
-
-.proximos__section1{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
+    .index__nav { gap: 25px; flex-wrap: wrap; height: auto; padding-bottom: 20px; }
 
-.proximos__section__lugares{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    .titulo { font-size: 50px; }
 
+    .newsletter__box { width: 90%; height: auto; padding: 30px 20px; }
+    .newsletter__text { width: 90%; }
+    .newsletter__input { width: 380px; }
 
-.proximos__title__lugar{
-    display: flex;
-    justify-content: center;
-}
+    .plantilla__container { flex-wrap: wrap; gap: 40px; }
+    .plantilla__img { width: 320px; height: 180px; }
 
-.proximos__section__horas{
-    display: flex;
-    justify-content: center;
-}
+    .card__container { width: 95%; }
+    .card { width: 95%; }
+    .card__stats { width: 320px; }
 
-.proximos__horario{
-    display: flex;
-    justify-content: center;
-}
+    .estrategia { width: 95%; }
+    .alineacion { flex-wrap: wrap; justify-content: center; }
+    .campo { border-radius: 0 0 10px 10px; }
+    .alineacion__banquillo { width: 350px; border-radius: 0 0 10px 10px; }
 
-.proximos__title__horario{
-    display: flex;
-    justify-content: center;
-    height: 100px;
-}
+    .explora__tarjetas { width: 100%; flex-wrap: wrap; padding: 0 20px; }
+    .explora__tarjeta { width: 300px; }
 
-.proximos__tercero{
-    display: flex;
-    background-color: var(--white-color);
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 90%;
-    width: 600px;
-    border: solid;
-    border-radius: 15px;
-}
+    .destacada__img { height: 280px; }
+    .destacada__title { font-size: 22px; }
+    .destacada__text { font-size: 16px; }
 
-.proximos__box__equipo{
-    display: flex;
-    gap: 20px;
-}
+    .recientes__tarjetas { flex-wrap: wrap; justify-content: center; }
+    .recientes__tarjeta { width: 45%; }
 
-.proximos__box__shuriken{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .proximos_equipo_inazuma { width: 95%; }
+    .proximos_title_proximos { margin-left: 0; justify-content: center; }
 
-.proximos__shuriken{
-    display: flex;
-    width: 55px;
-    height: 55px;
-}
+    .proximos__primer,
+    .proximos__segundo,
+    .proximos__tercero,
+    .proximos__cuarto { width: 95%; }
 
-.proximos__box__farm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .proximos__estadios { flex-wrap: wrap; }
 
-.proximos__farm{
-    display: flex;
-    width: 55px;
-    height: 55px;
-}
+    .tienda__button { margin-right: 20px; }
+    .button__distribution { width: 140px; }
 
+    .store { width: 420px; }
+    .carrusel__img { width: 80%; }
 
-.proximos__cuarto{
-    display: flex;
-    background-color: var(--white-color);
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 90%;
-    width: 600px;
-    border: solid;
-    border-radius: 15px;
-}
+    .tickets_title, .figures_title { width: 50%; }
 
-.proximos__box__wild{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .footer__newsletter { flex-direction: column; gap: 15px; text-align: center; }
+    .footer__links { flex-wrap: wrap; gap: 10px; }
 
-.proximos__wild{
-    display: flex;
-    width: 55px;
-    height: 55px;
 }
 
-.proximos__box__aggron{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+@media (max-width: 768px) {
+    .header { flex-direction: column; height: auto; padding: 10px 0; text-align: center; }
+    .header__content { margin-left: 0; justify-content: center; align-items: center; gap: 10px; }
+    .header__title { font-size: 32px; }
+    .header__logo { width: 80px; }
 
-.proximos__aggron{
-    display: flex;
-    width: 80px;
-    height: 80px;
-}
+    .index { height: auto; }
+    .index__overlay { height: auto; padding: 40px 16px; }
+    .index__content { margin-left: 0; padding: 10px; }
+    .index__title { font-size: 42px; width: 100%; }
+    .index__text { width: 100%; font-size: 16px; margin-top: 10px; }
+    .index__nav { flex-direction: column; gap: 16px; height: auto; }
+    .index__link, .index__link-seleccionado { width: 180px; }
 
+    .titulo { font-size: 40px; }
+    .destacados { margin-top: 60px; }
 
-.proximos__lugares{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 100px;
-}
+    .newsletter { margin-top: 70px; padding: 0 12px; }
+    .newsletter__box { width: 100%; padding: 25px 15px; }
+    .newsletter__text { width: 100%; font-size: 16px; }
+    .newsletter__email { flex-direction: column; width: 100%; align-items: center; gap: 12px; }
+    .newsletter__input { width: 100%; max-width: 520px; }
+    .newsletter__button { height: 45px; }
 
-.proximos__estadios{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
+    .explora { margin-top: 70px; margin-bottom: 70px; }
+    .explora__tarjetas { flex-direction: column; width: 100%; padding: 0 12px; }
+    .explora__tarjeta { width: 100%; max-width: 360px; }
 
-.proximos__estadio{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    .noticias { margin-top: 60px; margin-bottom: 60px; }
+    .destacada__tarjeta { flex-direction: column; }
+    .destacada__img { width: 100%; height: 220px; border-radius: 12px 12px 0 0; }
+    .destacada__texts { width: 100%; padding: 18px; }
+    .destacada__title { font-size: 20px; }
+    .destacada__text { font-size: 15px; }
+    .recientes__tarjetas { flex-direction: column; }
+    .recientes__tarjeta { width: 100%; }
 
-.proximos__raimon__vs__royal{
-    display: flex;
-    justify-content: center;
-    color: var(--orange-color);
-}
+    .proximos__lateral { width: 100%; margin: 30px 0; }
+    .proximos__navs { flex-wrap: wrap; justify-content: center; margin-left: 0; }
+    .proximos_nav1, .proximosnav2, .proximosnav3, .proximos_nav4 { justify-content: center; }
 
-.proximos__otro__color{
-    color: var(--green-color);
-}
+    .proximos__primer,
+    .proximos__segundo,
+    .proximos__tercero,
+    .proximos__cuarto { width: 95%; }
 
-.proximos__estadio__img{
-    display: flex;
-    width: 250px;
-    height: 250px;
-}
+    .proximos__estadios { flex-direction: column; align-items: center; gap: 25px; }
+    .proximos_estadio_img { width: 220px; height: 220px; }
 
-.proximos__occult__vs__zeus{
-    display: flex;
-    justify-content: center;
-    color: var(--black-color);
-}
+    .proximos__horarios { width: 95%; max-width: 420px; margin: 0 auto; }
 
-.proximos__otro__color_z{
-    color: var(--primary-color);
-}
+    .plantilla__container { flex-direction: column; padding: 20px; gap: 30px; }
+    .plantilla__img { width: 100%; max-width: 360px; height: auto; }
+    .plantilla__valoracion { width: 100%; max-width: 360px; }
 
-.proximos__shuriken__vs__farm{
-    display: flex;
-    justify-content: center;
-    color: var(--violet-color);
-}
+    .card__container { width: 95%; }
+    .card { width: 95%; height: auto; flex-direction: column; gap: 12px; font-size: 12px; }
+    .avatar { width: 160px; height: 160px; margin: 0 auto; }
+    .name { font-size: 22px; }
+    .level { font-size: 16px; }
 
-.proximos__otro__color_f{
-    color: var(--red-color);
-}
+    .card__stats { width: 95%; max-width: 420px; height: auto; margin: 0 auto; }
+    .supertecnicas { flex-direction: column; }
 
-.proximos__wild__vs__aggron{
-    display: flex;
-    justify-content: center;
-    color: var(--green-color);
-}
+    .estrategia { width: 95%; justify-content: center; }
+    .estrategia__title { font-size: 16px; margin-left: 0; }
 
-.proximos__otro__color_a{
-    color: var(--white-color);
-}
+    .alineacion { flex-direction: column; align-items: center; }
+    .campo { width: 320px; height: 480px; border-radius: 0 0 10px 10px; }
+    .alineacion__banquillo { width: 320px; height: auto; padding-bottom: 20px; border-radius: 0 0 10px 10px; }
+    .banquillo__box { width: 260px; }
 
-.proximos__horarios{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    height: 90%;
-    width: 400px;
-}
+    .tienda__button { justify-content: center; margin-right: 0; }
+    .button__distribution { width: 170px; }
 
-.proximos__horas{
-    display: flex;
-    background-color: var(--white-color);
-    font: 1em sans-serif;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: center;
-}
+    .store__wrap { flex-direction: column; gap: 12px; }
+    .store { width: 95%; max-width: 420px; }
 
-.proximos__grande{
-    display: flex;
-    font: 2em sans-serif;
-}
+    .label_equipacion { width: 95%; }
+    .equipacion__price { width: 85%; }
 
-.noticias {
-    width: 90%;
-    max-width: 1200px;
-    margin: 40px auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
+    .tickets_title, .figures_title { width: 80%; }
 
-.destacada {
-    margin-bottom: 60px;
-}
+    .footer { padding: 25px 12px; }
+    .gridContainer { gap: 18px; }
+    .footer__bottom { padding: 18px 0; }
+    .bottom__links { flex-wrap: wrap; }
 
-.destacada__tarjeta {
-    display: flex;
-    gap: 30px;
-    border-radius: 12px;
-    overflow: hidden;
-    background-color: var(--primary-color-transparent);
-    backdrop-filter: blur(4px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.destacada__tarjeta:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
+@media (max-width: 480px) {
+    .header__title { font-size: 26px; }
+    .header__logo { width: 70px; }
 
-.destacada__img {
-    width: 50%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 10px 0 0 10px;
-}
+    .index__title { font-size: 34px; }
+    .index__text { font-size: 14px; }
 
-.destacada__texts {
-    width: 50%;
-    display: flex;
-    padding: 15px;
-    flex-direction: column;
-    justify-content: center;
-}
+    .boton { font-size: 16px; padding: 12px; }
 
-.destacada__title {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
+    .newsletter__text { font-size: 14px; }
+    .newsletter__input { padding: 12px; }
 
-.destacada__text {
-    font-size: 18px;
-    line-height: 1.6;
-    opacity: 0.9;
-}
+    .explora__texto { width: 90%; }
 
-.recientes__tarjetas {
-    display: flex;
-    gap: 25px;
-}
+    .avatar { width: 140px; height: 140px; }
+    .name { font-size: 20px; }
+    .estadisticas { font-size: 13px; }
 
-.recientes__tarjeta {
-    border-radius: 12px;
-    overflow: hidden;
-    padding: 15px;
-    background-color: var(--primary-color-transparent);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    .campo { width: 300px; height: 450px; }
+    .alineacion__banquillo { width: 300px; }
 
-.recientes__tarjeta:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
+    .recientes__titulo { font-size: 1rem; }
+    .recientes__texto { font-size: 0.85rem; }
 
-.recientes__img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
+    .tickets_title, .figures_title { width: 95%; }
 
-.recientes__titulo {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-}
+    .footer__links { justify-content: center; }
+    .bottom__link-style { font-size: 13px; }
+    .copyright__bottom { font-size: 9px; }
 
-.recientes__texto {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    opacity: 0.85;
 }
