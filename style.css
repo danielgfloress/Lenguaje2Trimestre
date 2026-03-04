@@ -1576,7 +1576,7 @@ body {
 .proximos__lugares {
     display: flex;
     justify-content: center;
-    gap: 90px;
+    gap: 100px;
     margin-bottom: 100px;
 }
 
